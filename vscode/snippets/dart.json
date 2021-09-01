@@ -1,0 +1,47 @@
+{
+	"Stateless Widget": {
+		"prefix": [
+			"stateless",
+		],
+		"body": [
+			"import 'package:flutter/material.dart';",
+			"",
+			"class $Name extends StatelessWidget {",
+			"\tconst $Name();",
+			"",
+			"\t@override",
+			"\tWidget build(BuildContext context) {",
+			"\t\treturn ${0:const Text('$Name')};",
+			"\t}",
+			"}",
+		],
+		"description": "A Flutter Stateless Widget."
+	},
+	"Padding All": {
+		"prefix": "padding: all",
+		"body": [
+			"padding: ${1:const }EdgeInsets.all($2),$0"
+		],
+		"description": "Flutter Widget padding property"
+	},
+	"Freezed Class": {
+		"prefix": [
+			"freezed",
+		],
+		"body": [
+			"import 'package:freezed_annotation/freezed_annotation.dart';",
+			"",
+			"part '${1:file_name}.freezed.dart';",
+			"",
+			"@freezed",
+			"class $Class with _$$Class {",
+			"\tconst $Class._();",
+			"",
+			"\tconst factory $Class({",
+			"\t\t$0,",
+			"\t}) = _$Class;",
+			"}",
+		],
+		"description": "A Flutter Stateless Widget."
+	}
+}

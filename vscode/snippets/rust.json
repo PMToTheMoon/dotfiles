@@ -1,0 +1,13 @@
+{
+	"Impl Display": {
+		"prefix": "display",
+		"body": [
+			"impl std::fmt::Display for $Class {",
+			"\tfn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {",
+			"\t\t${0:f.write_str(\"$Class\")}",
+			"\t}",
+			"}",
+		],
+		"description": "Generate a std::fmt::Display trait impl block"
+	}
+}
