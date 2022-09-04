@@ -1,0 +1,1 @@
+required<T>() => (T value) {};

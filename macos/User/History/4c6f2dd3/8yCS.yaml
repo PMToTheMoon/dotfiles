@@ -1,0 +1,9 @@
+analyzer:
+  exclude: [_bonemeal_backup]
+
+  linter:
+  rules:
+    - always_declare_return_types
+    - prefer_single_quotes
+    - sort_child_properties_last
+    - unawaited_futures

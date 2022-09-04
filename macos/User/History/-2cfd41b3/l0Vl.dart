@@ -1,0 +1,29 @@
+import 'package:bonemeal/bonemeal.dart';
+import 'package:form_generator/form_generator.dart';
+import 'package:ipr/form_field_controllers/tbt_text_field.dart';
+import 'package:ipr/ipr.dart';
+
+Expression _fieldTr(String s) => 'professional_experience_form_$s'.tr;
+
+class ProfessionalExperiencesFormController extends Seed {
+  @override
+  MetaObject grow(BuildContext context) {
+    return FormController(formName: 'NewProfessionalExperienceForm', parts: [
+      TbtTextField(
+        'title',
+        label: _fieldTr('title_label'),
+        hint: _fieldTr('title_hint'),
+      ),
+      TbtTextField(
+        'company',
+        label: _fieldTr('company_label'),
+        hint: _fieldTr('company_hint'),
+      ),
+      TbtTextField(
+        'location',
+        label: _fieldTr('location_label'),
+        hint: _fieldTr('location_hint'),
+      ),
+    ]);
+  }
+}

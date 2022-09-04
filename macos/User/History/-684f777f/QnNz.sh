@@ -1,0 +1,1 @@
+flutter build apk -t lib/app/entrypoints/main_qualif.dart

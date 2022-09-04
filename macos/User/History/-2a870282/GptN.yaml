@@ -1,0 +1,39 @@
+name: ipr
+description: A new Flutter project.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.3 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  bonemeal:
+    path: /Users/pm/Project/bonemeal/bonemeal  
+  form_generator:
+    path: /Users/pm/Project/bonemeal/generators/form_generator
+  model_generators:
+    path: /Users/pm/Project/bonemeal/generators/model_generators
+  bloc_generators:
+    path: /Users/pm/Project/bonemeal/generators/bloc_generators
+
+
+  common:
+    path: /Users/pm/Project/zanalys/zanalys-app-flutter/packages/common
+  zanalys_api:
+    path: /Users/pm/Project/zanalys/zanalys-app-flutter/packages/zanalys_api
+  zanalys:
+    path: ../zanalys-app-flutter
+  intersperse: ^2.0.0
+  
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  
+

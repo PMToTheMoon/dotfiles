@@ -1,0 +1,13 @@
+api: ClientName
+
+baseUrl: "http://test.onmyride.com"
+
+endpoints:
+  login:
+    route: "/login"
+    inputs:
+      email: String
+      password: String
+    outputs:
+      success:
+        status: String

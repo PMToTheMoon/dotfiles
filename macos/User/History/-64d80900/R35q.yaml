@@ -1,0 +1,4 @@
+name: isolate_res
+
+environment:
+  sdk: '>=2.17.0 <3.0.0'

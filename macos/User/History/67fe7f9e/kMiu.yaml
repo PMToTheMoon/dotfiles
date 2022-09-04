@@ -1,0 +1,19 @@
+name: bonemeal_core
+version: 0.0.1
+publish_to: none
+
+environment:
+  sdk: '>=2.17.0 <3.0.0'
+
+dependencies:
+  glob: ^2.0.2
+  path: ^1.8.2
+  bonemeal_config:
+    path: ../bonemeal_config
+  crypto: ^3.0.2
+  convert: ^3.0.1
+  package_config: ^2.0.2
+  freezed_annotation: ^2.0.3
+
+dev_dependencies: 
+  freezed: ^2.0.3+1

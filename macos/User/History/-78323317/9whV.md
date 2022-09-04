@@ -1,0 +1,1 @@
+icons are generated using flutterIcon.

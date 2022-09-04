@@ -1,0 +1,1 @@
+class InvalidConfigError extends Error {}

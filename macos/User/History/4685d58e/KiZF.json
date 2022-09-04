@@ -1,0 +1,103 @@
+{
+	"Stateless Widget": {
+		"prefix": [
+			"stateless",
+		],
+		"body": [
+			"class $Name extends StatelessWidget {",
+			"\tconst $Name({",
+			"\t\tsuper.key,",
+			"});",
+			"",
+			"\t@override",
+			"\tWidget build(BuildContext context) {",
+			"\t\treturn ${0:const Text('$Name')};",
+			"\t}",
+			"}",
+		],
+		"description": "A Flutter Stateless Widget."
+	},
+	"Stateful Widget": {
+		"prefix": [
+			"stateful"
+		],
+		"body": [
+			"class $Name extends StatefulWidget {",
+			"\tconst $Name({",
+			"\t\tsuper.key,",
+			"\t});",
+			"",
+			"\t@override",
+			"\t${Name}State createState() => ${Name}State();",
+			"}",
+			"",
+			"class ${Name}State extends State<${Name}> {",
+			"\t${Name}State();",
+			"",
+			"\t@override",
+			"\tWidget build(BuildContext context) {",
+			"\t\treturn ${0:const Text('$Name')};",
+			"\t}",
+			"}",
+		]
+	},
+	"Freezed Class": {
+		"prefix": [
+			"freezed",
+		],
+		"body": [
+			"@freezed",
+			"class $Class with _$$Class {",
+			"\tconst $Class._();",
+			"",
+			"\tconst factory $Class.$0() = _$Class;",
+			"}",
+		],
+		"description": "A Flutter Stateless Widget."
+	},
+	"Json serializable class": {
+		"prefix": [
+			"serializable",
+		],
+		"body": [
+			"@JsonSerializable()",
+			"class $Class {",
+			"\tconst $Class();",
+			"",
+			"\tfactory $Class.fromJson(Map${0:<String, dynamic>} json) => _$${Class}FromJson(json);",
+			"}",
+		],
+		"description": "A Flutter Stateless Widget."
+	},
+	"Built value class": {
+		"prefix": [
+			"built",
+		],
+		"body": [
+			"abstract class ${1:BuiltValue} implements Built<$1, ${1}Builder> {",
+			"\tstatic Serializer<$1> get serializer => _${1/(.*)/${1:/camelcase}/g};",
+			"",
+			"\t${1}._();",
+			"",
+			"\tfactory $1([updates(${1}Builder b)]) = _$${1};",
+			"",
+			"\tString toJson() => serializers.toJson(${1}.serializer, this);",
+			"",
+			"\tfactory ${1}.fromJson(String jsonString) => serializers.fromJson(${1}.serializer, jsonString)!;",
+			"",
+			"}",
+		],
+		"description": "Built value class"
+	},
+	"Built value filed": {
+		"prefix": [
+			"bfield",
+		],
+		"body": [
+			"@BuiltValueField(wireName: '${1:name}')",
+			"${2:String} get ${1/(.*)/${1:/camelcase}/g};",
+			"${0}"
+		],
+		"description": "Built value class"
+	},
+}

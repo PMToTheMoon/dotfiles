@@ -1,0 +1,12 @@
+targets:
+  $default:
+    generators:
+      my_generator:
+        options: 
+        import: "package:my_package/builder.dart"
+        builder_factories: ["myBuilder"]
+        build_extensions: [".dart"]
+        auto_apply: dependents
+        defaults:
+          release_options:
+            some_key: "Some value the users will want in release mode"

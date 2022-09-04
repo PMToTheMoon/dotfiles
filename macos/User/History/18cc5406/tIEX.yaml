@@ -1,0 +1,7 @@
+api: ClientName
+
+baseUrl: "http.tagada.tsouin.tsouin"
+
+endpoints:
+  login:
+    route: "/login"

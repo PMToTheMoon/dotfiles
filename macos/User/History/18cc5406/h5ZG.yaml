@@ -1,0 +1,7 @@
+api: ClientName
+
+baseUrl: "http://test.onmyride.com"
+
+endpoints:
+  login:
+    route: "/login"

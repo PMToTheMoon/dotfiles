@@ -1,0 +1,27 @@
+import 'package:common/common.dart';
+import 'package:flutter/material.dart';
+import 'package:go_router_prototype/go_router_prototype.dart';
+import 'package:tech_by_tech/candidate/candidate.dart';
+
+class CandidateMenuBar extends StatelessWidget {
+  const CandidateMenuBar({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return TbtMenuBar(
+      children: [
+        const TbtMenuSectionTitle('GENERAL'),
+        TbtMenuLink(
+          Icons.table_chart_rounded,
+          'Dashboard',
+          onTap: () => RouteState.of(context).goTo(CandidateDashboard.path),
+        ),
+        TbtMenuLink(Icons.library_add_check_rounded, 'Cooptations',
+            onTap: () {}),
+        const TbtMenuDivider(),
+      ],
+    );
+  }
+}

@@ -1,0 +1,21 @@
+generators:
+  test_generator:
+    import: "package:test_generator/test_generator.dart"
+    generator_factories:
+      - testGenerator
+    generator_extensions: {".dart": [".dart"]}
+    auto_apply: dependents
+    defaults:
+      hide_outputs: true
+      consume_inputs: true
+      generate_for: ["**.dart"]
+      options:
+        test: true
+
+meta_objects:
+  test_meta_object:
+    import: package:test_generator/test_meta_object.dart
+    meta_object_factory: testMetaObjectFactory
+    defaults:
+      options:
+        meta_object_option_test: true

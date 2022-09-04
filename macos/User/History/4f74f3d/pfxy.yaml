@@ -1,0 +1,16 @@
+builders:
+  # bonemeal_builder:
+  #   import: "package:bonemeal_gen/bonemeal_gen.dart"
+  #   builder_factories: ["bonemealGenBuilder"]
+  #   build_extensions: {".dart": [".bonemeal.dart"]}
+  #   auto_apply: dependents
+  #   build_to: source
+  mirror_builder:
+    import: "package:bonemeal_gen/bonemeal_gen.dart"
+    builder_factories: ["mirrorBuilder"]
+    build_extensions: {'_template.dart': ['_template.g.dart']}
+    auto_apply: dependents
+    build_to: source
+    # defaults:
+    #   generate_for:
+    #     - '**/*.template.dart'

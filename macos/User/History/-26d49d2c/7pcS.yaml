@@ -1,0 +1,13 @@
+M1:
+  f1: int
+  f2: String
+
+M2:
+  f1:
+    n1: int
+    n2: String
+
+M3:
+  f1:
+    n1: int
+    n2: String

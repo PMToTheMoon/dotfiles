@@ -1,0 +1,6 @@
+subject: PatientList
+source:
+  type: API
+  fetch_function: fetch 
+  received_object_type:
+    model: List<DomainModel>

@@ -1,0 +1,4 @@
+meta_objects:
+  model:
+    import: 'package:model_generators/model_generators.dart'
+    factory: modelFactory

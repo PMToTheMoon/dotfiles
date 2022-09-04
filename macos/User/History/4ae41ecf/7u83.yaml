@@ -1,0 +1,17 @@
+targets:
+  $default:
+    builders:
+      json_serializable:
+        options:
+          # Checked yaml config
+          any_map: true
+          checked: true
+          disallow_unrecognized_keys: true
+builders:
+  models_builder:
+    import: "package:bonemeal/models_builder.dart"
+    builder_factories: ["modelsBuilder"]
+    # https://github.com/dart-lang/build/blob/master/docs/writing_a_builder.md#capture-groups
+    build_extensions: {"models.yaml": ["models.dart"]}
+    auto_apply: dependents
+    build_to: source

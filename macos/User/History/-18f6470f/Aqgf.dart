@@ -1,0 +1,3 @@
+final registry = {};
+
+class MetaObjectRegistry {}

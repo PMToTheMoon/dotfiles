@@ -1,0 +1,5 @@
+bonemeal:
+  generators:
+    $test_generator:$test_generator:
+      options:
+        test: false

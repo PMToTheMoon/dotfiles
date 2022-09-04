@@ -1,0 +1,124 @@
+// Copyright (c) 2018, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+import 'dart:async';
+import 'dart:io';
+
+import 'package:bonemeal_core/bonemeal_core.dart';
+import 'package:bonemeal_runner/src/asset/file_based.dart';
+import 'package:bonemeal_runner/src/asset/reader.dart';
+import 'package:bonemeal_runner/src/asset/writer.dart';
+import 'package:bonemeal_runner/src/generate/build_result.dart';
+import 'package:bonemeal_runner/src/generate/finalized_assets_view.dart';
+import 'package:bonemeal_runner/src/package_graph/package_graph.dart';
+import 'package:bonemeal_runner/src/utils/constants.dart';
+import 'package:io/io.dart';
+import 'package:logging/logging.dart';
+import 'package:path/path.dart' as p;
+
+import 'build_environment.dart';
+
+final _logger = Logger('IOEnvironment');
+
+/// A [BuildEnvironment] writing to disk and stdout.
+class IOEnvironment implements BuildEnvironment {
+  @override
+  final RunnerAssetReader reader;
+
+  @override
+  final RunnerAssetWriter writer;
+
+  final bool _isInteractive;
+
+  final bool _outputSymlinksOnly;
+
+  final PackageGraph _packageGraph;
+
+  IOEnvironment(this._packageGraph,
+      {bool? assumeTty, bool outputSymlinksOnly = false})
+      : _isInteractive = assumeTty == true || _canPrompt(),
+        _outputSymlinksOnly = outputSymlinksOnly,
+        reader = FileBasedAssetReader(_packageGraph),
+        writer = FileBasedAssetWriter(_packageGraph) {
+    if (_outputSymlinksOnly && Platform.isWindows) {
+      _logger.warning('Symlinks to files are not yet working on Windows, you '
+          'may experience issues using this mode. Follow '
+          'https://github.com/dart-lang/sdk/issues/33966 for updates.');
+    }
+  }
+
+  @override
+  void onLog(LogRecord record) {
+    if (record.level >= Level.SEVERE) {
+      stderr.writeln(record);
+    } else {
+      stdout.writeln(record);
+    }
+  }
+
+  @override
+  Future<int> prompt(String message, List<String> choices) async {
+    if (!_isInteractive) throw NonInteractiveBuildException();
+    while (true) {
+      stdout.writeln('\n$message');
+      for (var i = 0, l = choices.length; i < l; i++) {
+        stdout.writeln('${i + 1} - ${choices[i]}');
+      }
+      final input = stdin.readLineSync()!;
+      final choice = int.tryParse(input) ?? -1;
+      if (choice > 0 && choice <= choices.length) return choice - 1;
+      stdout.writeln('Unrecognized option $input, '
+          'a number between 1 and ${choices.length} expected');
+    }
+  }
+
+  @override
+  Future<BuildResult> finalizeBuild(
+    BuildResult buildResult,
+    FinalizedAssetsView finalizedAssetsView,
+    AssetReader buildCacheReader,
+    String iprDir,
+    String? outputDir,
+  ) async {
+    if (buildResult.status == BuildStatus.success) {
+      try {
+        final iprDirectory = Directory(iprDir);
+        if (iprDirectory.existsSync() == true) {
+          await iprDirectory.delete(recursive: true);
+          await iprDirectory.create(recursive: true);
+        }
+        await copyPath(iprBuildCacheDir, iprDir);
+
+        if (outputDir != null) {
+          await copyPath(outputBuildCacheDir, outputDir);
+        }
+      } catch (e) {
+        return _convertToFailure(
+          buildResult,
+        );
+      }
+    }
+    return buildResult;
+  }
+}
+
+Future<void> _exportIpr(String iprDir) async {
+  final buildCacheDir = Directory(iprBuildCacheDir);
+  final exportDir = Directory(iprDir);
+  if (await buildCacheDir.exists() == true) {
+    if (await exportDir.exists() == false) {
+      await iprDirectory.create(recursive: true);
+    }
+  }
+}
+
+bool _canPrompt() =>
+    stdioType(stdin) == StdioType.terminal &&
+    // Assume running inside a test if the code is running as a `data:` URI
+    Platform.script.scheme != 'data';
+
+BuildResult _convertToFailure(
+  BuildResult previous,
+) =>
+    BuildResult.failure();

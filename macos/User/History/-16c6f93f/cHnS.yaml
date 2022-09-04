@@ -1,0 +1,9 @@
+page: MyPage
+
+input: 
+output: 
+
+layout: MyPageLayout
+
+appBar: 
+navigationMenu: 

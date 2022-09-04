@@ -1,0 +1,18 @@
+builders:
+  bonemeal_builder:
+    import: "package:bonemeal_gen/bonemeal_gen.dart"
+    builder_factories: ["bonemealGenBuilder"]
+    build_extensions: {".dart": [".bonemeal.dart"]}
+    auto_apply: dependents
+    build_to: source
+  mirror_builder:
+    # library URI containing the builder - maps to `lib/member_count_library_generator.dart`
+    import: "package:source_gen_example/builder.dart"
+    # Name of the function in the above library to call.
+    builder_factories: ["metadataLibraryBuilder"]
+    # The mapping from the source extension to the generated file extension
+    build_extensions: {".dart": [".info.dart"]}
+    # Will automatically run on any package that depends on it
+    auto_apply: dependents
+    # Generate the output directly into the package, not to a hidden cache dir
+    build_to: source

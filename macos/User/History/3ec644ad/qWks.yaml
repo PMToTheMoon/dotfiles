@@ -1,0 +1,11 @@
+app: App Client
+pages:
+  sign_in:
+  log_in:
+  home:
+    payment:
+  trips:
+    trip_details:
+  profile:
+    passengers:
+    payment_methods:

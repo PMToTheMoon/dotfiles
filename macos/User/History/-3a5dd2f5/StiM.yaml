@@ -1,0 +1,13 @@
+name: mason_hooks
+description: Generate mason hooks base folder
+
+version: 0.0.1
+
+environment:
+  mason: any
+
+vars:
+  brick:
+    type: string
+    description: The name of the brick for which hooks are generated
+    prompt: "Brick name :"

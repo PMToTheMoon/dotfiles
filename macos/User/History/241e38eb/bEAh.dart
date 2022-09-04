@@ -1,0 +1,20 @@
+part of '../observation_card.dart';
+
+class _MedicalHistory extends StatelessWidget {
+  const _MedicalHistory(this.data);
+
+  final ObservationCardMedicalHistoryData data;
+
+  @override
+  Widget build(BuildContext context) {
+    return TitledSection(
+      title: context.l10n.medical_history_title,
+      subtitle: context.l10n.medical_history_subtitle,
+      child: Wrap(
+        spacing: Dimensions.spaceSmallest,
+        runSpacing: Dimensions.spaceSmallest,
+        children: data.items.map((item) => ColoredChip.orange(item)).toList(),
+      ),
+    );
+  }
+}

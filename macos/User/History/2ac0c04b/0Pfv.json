@@ -1,0 +1,36 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "bonemeal clean 2",
+      "cwd": "gen_test/",
+      "request": "launch",
+      "type": "dart",
+      "program": "bonemeal/bin/bonemeal.dart",
+      "args": [
+        "clean",
+      ]
+    },
+    {
+      "name": "bonemeal clean",
+      "cwd": "gen_test/",
+      "request": "launch",
+      "type": "dart",
+      "program": "pub",
+      "args": [
+        "run",
+        "bonemeal",
+        "clean",
+      ]
+    },
+    {
+      "name": "gen_test",
+      "cwd": "gen_test",
+      "request": "launch",
+      "type": "dart"
+    }
+  ]
+}

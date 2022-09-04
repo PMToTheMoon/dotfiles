@@ -1,0 +1,10 @@
+stream_view_bloc:
+---
+subject: HomeRecords
+state:
+  type: List<RecordsCardData>?
+  import: '$package:common/common.dart'
+source:
+  type: List<CspUserRecord>?
+  import: '$package:user/user_service.dart'
+

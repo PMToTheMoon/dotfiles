@@ -1,0 +1,16 @@
+meta_objects:
+  fetch_bloc:
+    import: package:bloc_generators/bloc.dart
+    factory: metaFetchBlocFactory
+  stream_view_bloc:
+    import: package:bloc_generators/bloc.dart
+    factory: streamViewBlocFactory
+
+# generators:
+#   fetch_bloc:
+#     import: package:fetch_generators/bloc.dart
+#     generator_extensions: {"fetch_bloc.yaml": [".dart"]}
+#     factories:
+#       - metaFetchBlocGeneratorFactory
+#     defaults:
+#       generate_for: ["**/fetch_bloc.yaml"]

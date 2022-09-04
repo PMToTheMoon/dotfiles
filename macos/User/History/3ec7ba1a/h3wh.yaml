@@ -1,0 +1,3 @@
+generators:
+  test_generator:
+    import: "package:test_generator/tes_generator.dart"

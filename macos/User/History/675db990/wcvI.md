@@ -1,0 +1,1 @@
+the type generator take a map as input and output 

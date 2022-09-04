@@ -1,0 +1,24 @@
+import 'package:common/common.dart';
+import 'package:flutter/material.dart';
+import 'package:neat/neat.dart';
+
+AppBar homeAppBar(
+  BuildContext context, {
+  required Widget title,
+  bool showAlertBadge = false,
+}) =>
+    AppBar(
+      toolbarHeight: 79,
+      centerTitle: false,
+      titleSpacing: Dimensions.paddingPageMedium,
+      title: title,
+      actions: [
+        Align(
+          alignment: Alignment.center,
+          child: NotificationBell(
+            showAlertBadge: showAlertBadge,
+          ),
+        ),
+        const SpaceSmall.w(),
+      ],
+    );

@@ -1,0 +1,7 @@
+Invalid argument(s): Only absolute normalized paths are supported: ./test/analyzer_test.dart
+package:analyzer/src/dart/analysis/analysis_context_collection.dart 168:7  AnalysisContextCollectionImpl._throwIfNotAbsoluteNormalizedPath
+package:analyzer/src/dart/analysis/analysis_context_collection.dart 159:7  AnalysisContextCollectionImpl._throwIfAnyNotAbsoluteNormalizedPath
+package:analyzer/src/dart/analysis/analysis_context_collection.dart 71:5   new AnalysisContextCollectionImpl
+test/analyzer_test.dart 24:9                                               main.<fn>
+test/analyzer_test.dart 16:20                                              main.<fn>
+

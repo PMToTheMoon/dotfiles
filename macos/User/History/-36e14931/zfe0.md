@@ -1,0 +1,14 @@
+# Router
+- Waiting go_router 5.0 for page shell
+- problème de tab considérées comme des pages.
+
+# UI Kit
+- Swicthes, radios and checkboxes does not completely follow design spec  due to vanilla widget limitations.
+- Designer les feedback: popover, dialog, banner, notifications ...
+- 
+
+# Avatar
+- ajouter un placeholder pour l'avatar
+
+# Profile form
+- need better debouncer

@@ -1,0 +1,6 @@
+model:
+---
+import: 'path/to/nice.dart'
+type: SuperUser
+fields:
+  - test: Sting

@@ -1,0 +1,6 @@
+api: MyApi
+
+authoity: "http://myapi.com"
+
+default:
+  protocol: http|https

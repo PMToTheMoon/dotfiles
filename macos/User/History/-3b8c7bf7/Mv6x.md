@@ -1,0 +1,2 @@
+# Blocs
+## Stream view bloc

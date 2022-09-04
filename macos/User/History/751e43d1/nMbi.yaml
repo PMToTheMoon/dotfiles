@@ -1,0 +1,13 @@
+stream_view_bloc:
+---
+subject: Hello
+state:
+  model:
+    type: 'User'
+    import: 'path/to/user.dart'
+source:
+  type: NotUser
+  import: 'not_user.dart'
+  transformer:
+    path: hooks.dart
+    name: _transformNotUser

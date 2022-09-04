@@ -1,0 +1,3 @@
+page:
+  route: "/home"
+  layout: HomeLayout

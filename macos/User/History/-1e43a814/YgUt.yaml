@@ -1,0 +1,8 @@
+models:
+version: 2.0
+classModel: vanilla|freezed|equatable
+models:
+  user:
+    name: String
+  user:
+    name: String

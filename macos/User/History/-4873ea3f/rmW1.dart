@@ -1,0 +1,3 @@
+class FileBasedAssetWriter {}
+
+class FileBasedAssetReader {}

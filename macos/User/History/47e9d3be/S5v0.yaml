@@ -1,0 +1,49 @@
+name: app_client
+description: Urban Driver app client
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+15
+
+environment:
+  sdk: ">=2.15.1 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  common:
+    path: "../common"
+  form_builder_validators: ^7.3.0
+  dio: ^4.0.4
+  dio_smart_retry: ^1.1.0
+  hive: ^2.0.5
+  hive_flutter: ^1.1.0
+  http: ^0.13.4
+  flutter_map: ^0.14.0
+  vector_map_tiles: ^1.3.46
+  intl: ^0.17.0
+  bloc_concurrency: ^0.2.0
+  rxdart: ^0.27.3
+  json_annotation: ^4.4.0
+  animate_do: ^2.1.0
+  intl_phone_field: ^3.1.0
+  state_machine_bloc:
+    git: 
+      url: https://github.com/Pierre2tm/state_machine_bloc.git
+      path: packages/state_machine_bloc
+      ref: 0.0.1-dev.3
+  checkbox_formfield: ^0.2.0
+  pin_code_fields: ^7.3.0
+  crypto: ^3.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.0
+  build_runner: ^2.1.7
+  freezed: ^1.1.1
+  freezed_annotation: ^1.1.0
+  flutter_bloc: ^8.0.1
+  json_serializable: ^6.1.4
+
+flutter:
+  uses-material-design: true

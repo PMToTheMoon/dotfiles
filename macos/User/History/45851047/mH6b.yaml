@@ -1,0 +1,25 @@
+generators:
+  test_generator:
+    import: "package:fetch_generators/bloc.dart"
+    generator_factories:
+      - testGenerator
+    generator_extensions: {".dart": [".dart"]}
+    auto_apply: dependents
+    defaults:
+      hide_outputs: true
+      consume_inputs: true
+      generate_for: ["**.dart"]
+      options:
+        test: true
+
+meta_objects:
+  fetch_bloc:
+    import: "package:fetch_generators/bloc.dart"
+    meta_object_factories:
+      - metaFetchBlocFactory
+    defaults:
+      hide_outputs: true
+      consume_inputs: true
+      generate_for: ["**.dart"]
+      options:
+        test: true

@@ -1,0 +1,6 @@
+bonemeal:
+  target: ../output
+  generators:
+    test_generator:
+      options:
+        test: false

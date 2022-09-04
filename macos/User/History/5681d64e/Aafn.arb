@@ -1,0 +1,295 @@
+{
+    "@_SPLASH_PAGE": {
+    },
+    "slogan": "Le plaisir de voyager en milieu urbain",
+    "@slogan": {
+      "description": "Slogan urban driver"
+    },
+
+
+    "@_LOGIN_PAGE":{
+    },
+    "forgot_password_button": "Mot de passe oublié",
+    "@forgot_password_button": {
+      "description": "Bouton \"Mot de passe oublié\"."
+    },
+    "login_button": "Connexion",
+    "@login_button": {
+      "description": "Connection bouton"
+    },
+    "login_sign_in_link": "Pas encore de compte ? S'inscrire",
+
+    "@_SIGN_IN_PAGE": {
+    },
+    "sign_in_page_title": "Inscription",
+    "sign_in_button": "S'inscrire",
+    "accept_terms_of_use": "J'accepte les CGU",
+    "open_terms_of_use_button": "(Voir les CGU)",
+    "should_accept_term_of_use_error": "Vous devez acceptez les CGU",
+    "sign_in_code_check_title": "Code de vérification",
+    "sign_in_code_check_message": "Merci d'entrer le code de verification envoyé au {phoneNumber} par sms",
+    "@sign_in_code_check_message": {
+      "placeholders": {
+        "phoneNumber": {
+          "type": "String"
+        }
+      }
+    },
+    "unable_to_send_code_error": "Erreur lors de l'envoie du code",
+    "invalid_code_error": "Le code rensigné est invalide",
+    "sign_in_failed_error": "Une erreur est survenue lors de la création de votre compte",
+    "log_in_failed_error": "Votre compte a bien été créé",
+
+    "@_NAVIGATION_MENU": {
+    },
+    "trip_list_link": "Mes commandes",
+    "passengers_link": "Passagers",
+    "payment_methods_link": "Moyens de paiement",
+    "account_link": "Mon compte",
+    "support_link": "Aide et support",
+    "meet_points_link": "Points de rencontre",
+    "legal_mentions_link": "Mentions légales",
+    "logout_button": "Déconnexion",
+
+
+    "@_HOME_PAGE":{
+    },
+    "departure_field_label": "départ",
+    "@departure_field_label": {
+      "description": "Champ 'départ' du formulaire de réservation"
+    },
+    "arrival_field_label": "arrivée",
+    "@arrival_field_label": {
+      "description": "Champ 'arrivée' du formulaire de réservation"
+    },
+    "departure_arrival_identical_error": "Les adresses de départ et d'arrivée sont identiques",
+    "@departure_arrival_identical_error": {
+      "description": "Erreur affichée lors de la réservation si le point de départ est identique au point d'arrivée"
+    },
+    "command_confirmation_dialog_title": "Récapitulatif",
+    "@command_confirmation_dialog_title": {
+      "description": "Titre de la popup de récap de commande."
+    },
+    "command_confirmation_dialog_action": "Confirmer",
+    "@command_confirmation_dialog_action": {
+      "description": "Label du bouton d'action de la popup de recap de commande."
+    },
+    "command_confirmation_term_payment": "Paiement à terme",
+    "@command_confirmation_term_payment": {
+      "description": "label du prix dans la popup confirmation de commande."
+    },
+    "payment_successful_dialog_title": "Payment effectué avec succès !",
+    "@payment_successful_dialog_title": {
+      "description": "Titre de la pop-up affiché lors d'un paiment de commande"
+    },
+    "payment_error_dialog_title": "Une erreur est survenue lors du paiement.",
+    "@payment_error_dialog_title": {
+      "description": "Titre de la pop-up affiché d'erreur lors du paiment de la commande"
+    },
+    "select_address_button_empty_label": "Sélectionnez une date",
+    "@select_address_button_empty_label": {
+      "description": "Label du bouton de séléction de date affiché lorsqu'aucune date n'est séléctionnée."
+    },
+    "no_cost_center_selected_error": "Centre de coût",
+    "@no_cost_center_selected_error": {
+      "description": "Message d'erreur affiché si le moyen de payment sélectionné est de type 'company' mais qu'aucun centre de coût n'a été séléctionné"
+    },
+    "drive_alert_label": "Réservations",
+    "recap_popup_add_comment": "Ajouter un commentaire",
+    "estimation_price_suffix": " TTC en ",
+    "departure_date_in_past_error": "L'heure de départ ne peut pas être antérieure au ${date}",
+    "@departure_date_in_past_error": {
+      "placeholders": {
+        "date": {
+          "type": "String"
+        },
+      }
+    }
+
+    "@_FLIGHT_SELECTION_PAGE": {
+    },
+    "flight_found_message_full":"Votre vol arrivera à l'aéroport {airport} le {date} à {hour}",
+    "@flight_found_message_full": {
+      "placeholders": {
+        "airport": {
+          "type": "String"
+        },
+        "date": {
+          "type": "String"
+        },
+        "hour": {
+          "type": "String"
+        }
+      }
+    },
+    "flight_found_message":"Votre vol arrivera le {date} à {hour}",
+    "@flight_found_message": {
+      "placeholders": {
+        "date": {
+          "type": "String"
+        },
+        "hour": {
+          "type": "String"
+        }
+      }
+    },
+    "no_flight_found_message": "Aucun vol correspondant n'a été trouvé.",
+    "departure_delay_title": "Décaler l'arrivée du chauffeur",
+    "departure_delay_text": "Afin de passer les formalités en toute sérénité, vous pouvez demander à ce que votre chauffeur arrive après l'heure d'arrivée effective de votre vol.",
+    "flight_skip_page": "Continuer sans numéro",
+
+    "@_ADDRESS_PAGE":{
+    },
+    "address_filter": "Adresses",
+    "@address_filter": {
+      "description": "Filtre \"adresses\" de la page de sélection d'adresses."
+    },
+    "airport_filter": "Aéroports",
+    "@airport_filter": {
+      "description": "Filtre \"aéroport\" de la page de sélection d'adresses."
+    },
+    "train_filter": "Gares",
+    "@train_filter": {
+      "description":  "Filtre \"trains\" de la page de sélection d'adresses."
+    },
+    "select_train_number_page_title": "Mon train",
+    "@select_train_number_page_title": {
+      "description": "Titre de la page de sélection de numéro de train"
+    },
+    "no_train_number_button": "Je n'ai pas de numéro",
+    "@no_train_number_button": {
+      "description": "Bouton \"je n'ai pas de numéro\" de la page de sélection de numéro de train"
+    },
+    "train_number_field_label": "Numéro de train ou provenance",
+    "train_number_field_hint": "6644",
+    
+    "select_flight_number_page_title": "Mon vol",
+    "no_flight_number_button": "Je n'ai pas de numéro",
+    "flight_number_field_label": "Numéro de vol",
+    "flight_number_field_hint": "AF1227",
+
+
+    "@_PAYMENT_METHODS_PAGE":{
+    },
+    "passengers_page_title": "Passagers",
+    "@passengers_page_title": {
+      "description": "Titre de la page passagers."
+    },
+    "payment_methods_page_title": "Moyens de paiement",
+    "@payment_methods_page_title": {
+      "description": "Titre de la page moyen de paiements."
+    },
+    "payment_methods_prepaid": "Prépayé",
+    "@payment_methods_prepaid": {
+      "description": "Moyen de paiement prépayé"
+    },
+    "address_selection_page_title": "Saisir l'adresse",
+    "@address_selection_page_title": {
+      "description": "titre de la page de sélection d'adresse"
+    },
+    "cost_center_hint": "Sélectionnez le centre de coût",
+    "@cost_center_hint": {
+      "description":"Message affiché en dessous des moyen de payments \"company\" lorsqu'aucun moyen de payment n'est sélectionné."
+    },
+    "cost_center_label": "Référence",
+    "@cost_center_label": {
+      "description":"Label affiché devant le menu de sélection de centre de coût."
+    },
+    "add_passanger_button": "Ajouter un passager",
+
+
+    "@_TRIP": {
+    },
+    "trip_list_page_title": "Mes Trajets",
+    "@trip_list_page_title": {
+      "description": "Titre de la page mes trajets"
+    },
+    "incoming_trip_tab": "A venir",
+    "@incoming_trip_tab": {
+      "description": "label de la liste des commandes à venir"
+    },
+    "passed_trip_tab": "Historique",
+    "@passed_trip_tab": {
+    "description": "label de l'historique de commandes"
+    },
+    "trip_tag_payed":"payée",
+    "trip_tag_completed":"terminée",
+    "trip_tag_waiting_payment":"en attente de payment",
+    "trip_tag_canceled":"annulée",
+
+    "@_TRIP_DETAILS": {
+    },
+    "trip_details_page_tile": "Détail de mon trajet",
+    "@trip_details_page_tile": {
+      "description": "titre de la page deatils de trajet"
+    },
+    "book_return_trip_button": "Réserver le trajet retour",
+    "signal_trip_problem_button": "Contacter le service client",
+    "cancel_trip_button": "Annuler la course",
+    "cancel_trip_dialog_message": "L'annulation de la course peut entrainer des frais (Voir politique d'annulation Article 3.4). Souhaitez vous vraiment l'annuler ?",
+    "cancel_trip_dialog_title": "Annuler votre course",
+    "cancel_trip_confirmation_button":"Confirmer l'annulation",
+    "cancel_trip_read_cancellation_policy": "Lire la politique d'annulation",
+    "cancel_trip_dont_cancel_button": "Annuler",
+    "trip_successfully_cancelled_message": "La commande a été annulée",
+    "trip_cancellation_refused_1h_limit_message": "La commande ne peut pas être annulé moins d'une heure avant la course.",
+    "trip_comment_label": "Ajouter un commentaire à la course",
+
+    "@_PROFILE": {
+    },
+    "profile_page_title": "Mon compte",
+    "profile_change_password_button": "Modifier mon mot de passe",
+
+    "@_NEW_PASSEBGER": {
+    },
+    "new_passenger_page_title": "Ajouter un passager",
+    "new_passenger_email_hint":"Email (Optionnel)",
+
+    "@_EXTERNAL_PAGES": {
+    },
+    "terms_of_use_page": "CGU",
+    "legal_mentions_page": "Mentions Légales",
+    "support_page": "Aide et Support",
+    "report_problem_page": "Service client",
+    "meet_points_page": "Points de rencontre",
+
+    "@_FORM": {
+    },
+    "field_required_error": "Ce champs est requis",
+    "bad_email_format_error": "L'email est invalide",
+    "bad_numeric_format_error": "Ce champs doit contenitr uniquemnt des chiffres",
+    "invalid_phone_number_error": "Le numéro de téléphone n'est pas valide",
+    "phone_should_be_mobile_number_error": "Merci de renseigner un numéro de téléphone mobile",
+
+
+    "password_length_less_12_error": "Doit contenir 12 caractères minimum, dont au moins une majuscule, un chiffre et un caractère spécial.",
+    "password_no_special_char_error": "Doit contenir 12 caractères minimum, dont au moins une majuscule, un chiffre et un caractère spécial.",
+    "password_no_uppercase_error": "Doit contenir 12 caractères minimum, dont au moins une majuscule, un chiffre et un caractère spécial.",
+    "password_no_lowercase_error": "Doit contenir 12 caractères minimum, dont au moins une majuscule, un chiffre et un caractère spécial.",
+    "password_no_digit_error": "Doit contenir 12 caractères minimum, dont au moins une majuscule, un chiffre et un caractère spécial.",
+
+    "email_hint":"Email",
+    "password_hint": "Mot de passe",
+    "phone_hint": "Numéro de mobile",
+    "last_name_hint": "Nom",
+    "first_name_hint": "Prénom",
+
+    "@_ERRORS": {
+    },
+    "error_indicator_message": "Une erreur est survenue.",
+    "try_later_error": "Une erreur est survenue. Merci de réessayer plus tard.",
+    "invalid_credential_error": "L'email ou le mot de passe est invalide.",
+
+
+    "@_COMMON":{
+    },
+    "empty_list_message": "Il n'y a rien a afficher.",
+    "select": "Sélectioner",
+    "cancel": "Annuler",
+    "validate": "Valider",
+    "command": "Commander",
+    "ok": "OK",
+    "berlin": "Berline",
+    "motorcycle": "Moto",
+    "exit": "Quitter"
+}

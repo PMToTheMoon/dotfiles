@@ -1,0 +1,2 @@
+- Integrate new colors, Typography and Dimensions
+- Add theme extension for additional tbt colors

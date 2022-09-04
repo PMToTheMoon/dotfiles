@@ -1,0 +1,16 @@
+## Constructor
+from members
+can be merge with other ctr
+convert to declaration
+convert to call
+
+## Members
+list of members
+contain also initialization data ?
+
+
+## Value
+literal or ref
+x = value;
+x = 'literal';
+x = widget.ref;

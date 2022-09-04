@@ -1,0 +1,13 @@
+stream_view_bloc:
+---
+subject: HomeRecords
+state:
+  type: HomeRecordsState
+  fields:
+    high_priority:
+source:
+  type: List<CspUserRecord>?
+  import: '$package:user/user_service.dart'
+  transformer:
+
+

@@ -1,0 +1,15 @@
+stream_view_bloc:
+---
+subject: HomeRecords
+state:
+  model:
+    type: HomeRecordsState
+    fields:
+      highPriority: List<RecordCardData>
+      inProgress: List<RecordCardData>
+      drafts: List<RecordCardData>
+source:
+  type: List<CspUserRecord>?
+  import: '$package:user/user_service.dart'
+  transformer: _filterRecords
+hooks: home_records_transformer.dart

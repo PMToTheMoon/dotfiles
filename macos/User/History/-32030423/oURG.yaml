@@ -1,0 +1,18 @@
+name: ipr
+description: A sample command-line application.
+version: 1.0.0
+# homepage: https://www.example.com
+
+environment:
+  sdk: '>=2.17.3 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  test: ^1.16.0
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true

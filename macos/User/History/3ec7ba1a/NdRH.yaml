@@ -1,0 +1,6 @@
+generators:
+  test_generator:
+    import: "package:test_generator/tes_generator.dart"
+    generator_factories:
+      - testGenerator
+    generator_extensions: {".dart": [".dart"]}

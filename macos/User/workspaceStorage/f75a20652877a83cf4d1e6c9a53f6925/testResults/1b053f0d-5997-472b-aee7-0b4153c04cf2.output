@@ -1,0 +1,6 @@
+Expected: <true>
+  Actual: <false>
+
+package:test_api                  expect
+test/user_service_test.dart 31:7  main.<fn>.<fn>
+

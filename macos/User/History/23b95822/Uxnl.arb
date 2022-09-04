@@ -1,0 +1,20 @@
+{
+  "@_UI_KIT": {
+  },
+  "example": "example: {param}",
+  "@example": {
+    "placeholders": {
+        "example": {
+            "type": "String"
+        }
+    }
+  },
+  "search_bar_hint": "Rechercher ici…",
+  "profile_popover_profile_button": "Mon profile",
+  "profile_popover_personal_information": "Informations personnelles",
+  "profile_popover_dcouments_button": "Contrats et documents",
+  "profile_popover_logout_button": "Déconnexion",
+
+
+  "@_END": "no trailing space"
+}

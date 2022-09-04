@@ -1,0 +1,1 @@
+typereference instead of fields bloc (dataType, fetchType)

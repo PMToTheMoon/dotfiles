@@ -1,0 +1,177 @@
+{
+  "app_name": "Zanalys",
+
+  "@_UI_KIT": {
+  },
+  "home_app_bar_subtitle": "bonjour",
+  "home_app_bar_title": "Docteur {firstName} 👋",
+  "@home_app_bar_title": {
+    "placeholders": {
+        "firstName": {
+            "type": "String"
+        }
+    }
+  },
+  "status_done_label": "Cloturé",
+  "empty_list_indicator": "Il n'y a rien à afficher",
+  "search": "Rechercher",
+  "required_chip": "Requis",
+  "add": "Ajouter",
+
+  "@REQUESTS": {
+  },
+  "request_tele_expertise": "télé-expertise",
+  "request_consultation": "consultation",
+  "request_card_request_type": "Demande de {type} du ",
+  "@request_card_request_type": {
+    "placeholders": {
+        "type": {
+            "type": "String"
+        }
+    }
+  },
+  "request_card_sender": "Docteur {lastName}",
+  "@request_card_sender": {
+    "placeholders": {
+        "lastName": {
+            "type": "String"
+        }
+    }
+  },
+
+  "@_ERROR": {
+  },
+  "error_session_expired": "Votre session a expiré, veuillez vous reconnecter",
+  "error_undefined": "Une erreur est survenue. Merci de vérifier votre connexion et de réessayer",
+  "error_email_invalid": "L'identifié renseigné est invalide",
+  "error_password_invalid": "Le mot de passe renseigné est invalide",
+  "required_error": "Ce champ ne peut pas être vide.",
+
+  "@_SIGN_IN": {
+  },
+  "sign_in_title": "Connexion",
+  "sign_in_description": "Bienvenue sur zanalys pour vous connecter veuillez récupérer l’identifiant qui vous a été transmis par mail",
+  "sign_in_hint_id": "Identifiant zanalys",
+  "sign_in_hint_password": "Mot de passe",
+  "sign_in_button": "Se connecter",
+  "sign_in_keep_save_id": "Se souvenir de moi",
+
+  "@_HOME": {
+  },
+  "home_title": "Bonjour Docteur",
+  "home_button_take_photo": "Prendre une Photo",
+  "home_action_create_patient": "Creer un patient",
+  "home_action_create_journey": "Creer un parcours",
+
+  "@_HOME_RECORDS": {
+  },
+  "home_tab_in_progress": "En cours",
+  "home_tab_high_priority": "Prioritaire",
+  "home_tab_draft": "Brouillon",
+
+  "@_PATIENT_LIST": {
+  },
+  "patient_list_page_title": "Séléctionner un patient",
+  "patient_list_page_subtitle": "Mes patients",
+
+  "@_PATIENT_VIEW": {
+  },
+  "patient_view_page_subtitle": "Patient",
+  "patient_view_record_list_tab": "Parcours",
+  "patient_view_infos_tab": "Informations",
+
+  "@_IMAGE_PICKER": {
+  },
+  "image_picker_gallery": "Galerie",
+  "image_picker_camera": "Appareil photo",
+
+  "@_OTP": {
+  },
+  "otp_title": "Double authentification",
+  "otp_description": "Un code vous a été envoyé par mail. Veuillez entrer \nce dernier pour vous connecter",
+  "otp_button": "Valider",
+
+  "@_UPLOAD_DOCUMENT": {
+  },
+  "upload_document_title": "Ajout de photo au dossier",
+  "upload_document_hint_access_code": "Code d'accès",
+  "upload_document_button": "Envoyer photo",
+  "upload_document_success": "Votre fichier a été ajouté",
+  
+  "@_UPLOAD_CONFIRMATION": {
+  },
+  "upload_document_confirmation_title": "Ajouter photo au dossier",
+  "upload_document_confirmation_label": "Votre fichier a été ajouté",
+
+  "@RECORD_INITIAL_OBSERVATION_FORM": {
+  },
+  "initial_observation_page_title": "Formulaire",
+  "validate_initial_observation": "Partager",
+
+  "record_title": "Titre du parcours",
+  "record_title_hint": "Titre",
+
+
+  "@_RECORDS": {
+  },
+  "undefined_record_type_page_subtitle": "Parcours",
+  "record_type_general": "Général",
+  "record_type_ecg": "Cardiologie",
+  
+
+  "@_RECORD_HUB": {
+  },
+  "hub_complete_button": "Compléter",
+  "hub_bottom_sheet_title": "Compléter le parcours",
+  "hub_bottom_sheet_consultation_rapport": "Compte rendu de consultation",
+  "hub_bottom_sheet_exam_rapport": "Compte rendu d’examen",
+  "hub_bottom_sheet_followup": "Suivi parcours",
+  "hub_bottom_sheet_close_record": "Clôture",
+
+  "@OBSERVATION_CARDS": {
+  },
+  
+  "hidden_observation_title": "Motif",
+  "hidden_observation_subtitle": "(non visible par le patient)",
+  "hidden_observation_hint": "Ecrire un motif ici",
+  "hidden_observation_error": "Vous devez remplir le motif ou l’observation",
+
+  "patient_observation_title": "Observation",
+  "patient_observation_subtitle": "(partagé avec le patient)",
+  "patient_observation_hint": "Ecrire un motif ici",
+  "patient_observation_error": "Vous devez remplir le motif ou l’observation",
+
+  "clinical_exam_title": "Examen clinique",
+  "weight_hint": "Poids (Kg)",
+  "height_hint": "Taille (cm)",
+  "pas_hint": "PAS",
+  "pad_hint": "PAD",
+  "temperature_hint": "Température",
+  "heart_rate_hint": "Freq. cardiaque",
+  
+  "medical_history_title": "Antécédents",
+  "medical_history_subtitle": "personnels et familiaux",
+  "medical_history_hint": "Ajouter un antécédent",
+  
+  "symptoms_title": "Symptômes",
+  "symptoms_hint": "Ajouter un symptôme",
+  
+  "treatment_title": "Traitements en cours",
+  "treatment_hint": "Ajouter un traitement",
+  
+  "additional_observation_title": "Examens complémentaires",
+  "additional_observation_hint": "Ecrire un motif ici",
+
+  "obs_rapport_title": "Compte rendu",
+  "obs_rapport_subtitle": "(partagé avec le patient)",
+  "obs_appointment_title": "Rendez-vous programmé",
+
+  "@_OBSERVATIONS_FORM":{
+  },
+  "obs_form_new_consultation_title": "Programmer un autre rendez vous patient",
+  "obs_form_new_consultation_label": "Souhaitez-vous compléter la prise en charge du patient par un rendez vous en:",
+  "obs_consultation_in_person": "Présentiel",
+  "obs_consultation_distance": "Téléconsultation",
+  "obs_no_consultation": "Pas de rendez vous supplémentaire",
+  "obs_share_button": "Partager"
+}

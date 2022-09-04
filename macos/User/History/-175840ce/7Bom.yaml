@@ -1,0 +1,45 @@
+name: common
+description: A sample command-line application.
+version: 1.0.0
+publish_to: 'none'
+
+environment:
+  sdk: '>=2.17.5 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  models:
+    path: ../models
+  translations:
+    path: ../translations
+
+  google_fonts: ^3.0.1
+  intl: ^0.17.0
+  neat: ^0.2.4
+  freezed_annotation: ^2.0.3
+
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  build_runner: ^2.1.11
+  flutter_gen_runner: ^4.3.0
+  freezed: ^2.0.3+1
+  neat_generator: ^0.2.0
+
+flutter_gen:
+  output: lib/src/assets/
+  line_length: 80
+  assets:
+    package_parameter_enabled: true
+    enabled: true      
+  fonts:
+    enabled: false
+  colors:
+    enabled: false
+
+flutter:
+  uses-material-design: true
+  assets:
+    - fonts/Poppins/
+    - fonts/Crimson_Pro/

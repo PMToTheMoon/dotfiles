@@ -1,0 +1,1 @@
+flutter build ios -t lib/app/entrypoints/main_qualif.dart

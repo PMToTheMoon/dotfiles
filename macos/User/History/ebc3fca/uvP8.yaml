@@ -1,0 +1,14 @@
+name: gen_test
+description: A simple command-line application.
+version: 1.0.0
+publish_to: "none"
+
+environment:
+  sdk: '>=2.16.2 <3.0.0'
+
+
+dev_dependencies:
+  build_runner: ^2.1.10
+  bonemeal:
+    path: "../bonemeal"
+  lints: ^1.0.0

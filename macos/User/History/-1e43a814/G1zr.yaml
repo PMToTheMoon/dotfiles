@@ -1,0 +1,5 @@
+models:
+version: 2
+---
+user:
+  name: String

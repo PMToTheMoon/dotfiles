@@ -1,0 +1,39 @@
+Bonjour Azza,
+
+
+Après étude de l'application BoBee, je vous propose cette liste de features pour le MVP de ce nouveau projet:
+
+Page signin/login email et social login.
+
+Page recherche de pin, par localisation ou par tag, similaire à la page d'accueil de BoBee.
+
+Page "pin map", une carte interactive de tous les marqueurs posté par les utilisateurs.
+
+Page détails de pin, affiché en sélectionnant un des résultats de la recherche ou un marqueur sur la carte.
+
+Page post, pour publier une nouvelle localisation avec photos et hashtags.
+
+
+Cette liste de features diffère de celle que vous avez renseigné pour la V1, je vous propose celle-ci dans un premier temps en attendant d'avoir pu échanger avec vous par téléphone.
+
+
+La stack que vous avez proposé me convient parfaitement, le front-end sera donc réalisé en flutter et le back-end basé sur firebase.
+
+Je vous propose les APIs google pour la carte interactive et la recherche d'adresse de la page recherche de pin (Google map&Google place).
+
+
+En me basant sur la liste de features présentées ci-dessus, j'estime le temps nécessaire au développement du MVP de 3 à 4 semaines pour un coût de 6800€.
+
+
+Avant d'établir le devis final nous établirons ensemble un wireframe du MVP qui servira de cahier des charges et de référence pour le développement du projet.
+
+
+Concernant mes méthodes de travail, je vous donne accès à des versions "dev" tout au long du développement et je vous livre le code source une fois le projet terminé. Je produis un nouveau build toutes les semaines environ, que je vous envoie accompagné de son changelog afin que vous puissiez tester l'application et me faire vos retours si quelque chose ne vous convient pas.
+
+
+N'hésitez pas à me contacter au 06 52 17 94 08 pour échanger plus en détail du projet ou pour toute information complémentaire.
+
+
+En vous souhaitant une bonne fin de journée,
+
+Pierre

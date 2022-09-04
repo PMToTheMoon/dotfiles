@@ -1,0 +1,7 @@
+builders:
+  bonemeal_builder:
+    import: "package:bonemeal_gen/bonemeal_gen.dart"
+    builder_factories: ["bonemeal_gen_builder"]
+    build_extensions: {".dart": [".bm.dart"]}
+    auto_apply: dependents
+    build_to: source

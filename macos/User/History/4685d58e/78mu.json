@@ -1,0 +1,181 @@
+{
+	"Stateless Widget": {
+		"prefix": [
+			"stateless",
+		],
+		"body": [
+			"class $Name extends StatelessWidget {",
+			"\tconst $Name({",
+			"\t\tsuper.key,",
+			"});",
+			"",
+			"\t@override",
+			"\tWidget build(BuildContext context) {",
+			"\t\treturn ${0:const Text('$Name')};",
+			"\t}",
+			"}",
+		],
+		"description": "A Flutter Stateless Widget."
+	},
+	"Stateful Widget": {
+		"prefix": [
+			"stateful"
+		],
+		"body": [
+			"class $Name extends StatefulWidget {",
+			"\tconst $Name({",
+			"\t\tsuper.key,",
+			"\t});",
+			"",
+			"\t@override",
+			"\t${Name}State createState() => ${Name}State();",
+			"}",
+			"",
+			"class ${Name}State extends State<${Name}> {",
+			"\t${Name}State();",
+			"",
+			"\t@override",
+			"\tWidget build(BuildContext context) {",
+			"\t\treturn ${0:const Text('$Name')};",
+			"\t}",
+			"}",
+		]
+	},
+	"Freezed Class": {
+		"prefix": [
+			"freezed",
+		],
+		"body": [
+			"@freezed",
+			"class $Class with _$$Class {",
+			"\tconst $Class._();",
+			"",
+			"\tconst factory $Class.$0() = _$Class;",
+			"}",
+		],
+		"description": "A Flutter Stateless Widget."
+	},
+	"Json serializable class": {
+		"prefix": [
+			"serializable",
+		],
+		"body": [
+			"@JsonSerializable()",
+			"class $Class {",
+			"\tconst $Class();",
+			"",
+			"\t$0",
+			"",
+			"\tfactory $Class.fromJson(Map${0:<String, dynamic>} json) => _$${Class}FromJson(json);",
+			"",
+			"\tMap<String, dynamic> toJson() => _$${Class}ToJson(this);",
+			"}",
+		],
+		"description": "A Flutter Stateless Widget."
+	},
+	"Built value class": {
+		"prefix": [
+			"built",
+		],
+		"body": [
+			"abstract class ${1:BuiltValue} implements Built<$1, ${1}Builder> {",
+			"\tstatic Serializer<$1> get serializer => _${1/(.*)/${1:/camelcase}/g};",
+			"",
+			"\t${1}._();",
+			"${0}",
+			"\tfactory $1([updates(${1}Builder b)]) = _$${1};",
+			"",
+			"\tString toJson() => serializers.toJson(${1}.serializer, this);",
+			"",
+			"\tfactory ${1}.fromJson(String jsonString) => serializers.fromJson(${1}.serializer, jsonString)!;",
+			"",
+			"}",
+		],
+		"description": "Built value class"
+	},
+	"Built value filed": {
+		"prefix": [
+			"bfield",
+		],
+		"body": [
+			"@BuiltValueField(wireName: '${1:name}')",
+			"${2:String} get ${1/(.*)/${1:/camelcase}/g};",
+			"${0}"
+		],
+		"description": "Built value class"
+	},
+	"Part generated": {
+		"prefix": [
+			"part this"
+		],
+		"body": [
+			"part '${TM_FILENAME}';"
+		],
+	},
+	"Built value enum": {
+		"prefix": [
+			"benum",
+		],
+		"body": [
+			"@BuiltValueEnum(wireName: '${1:wire}')",
+			"class ${2:Class} extends EnumClass {",
+			"static Serializer<${2}> get serializer => _$${1/(.*)/${1:/camelcase}/g}Serializer;",
+			"",
+			"@BuiltValueEnumConst(wireName: 'value')",
+			"static const ${2} value = _$value;",
+			"",
+			"static BuiltSet<${2}> get values => _$${1/(.*)/${1:/camelcase}/g}Values;",
+			"static ${2} valueOf(String name) => _$${1/(.*)/${1:/camelcase}/g}ValueOf(name);",
+			"}",
+		]
+	},
+	"Triple State consumer": {
+		"prefix": [
+			"triple consumer"
+		],
+		"body": [
+			import 'package:flutter_bloc/flutter_bloc.dart';
+
+"class {{ class.subject }} extends StatelessWidget {",
+			"  const { class.constructor }({",
+			"    super.key,",
+			"    required this.loading,",
+			"    required this.success,",
+			"    required this.error,",
+			"    this.onLoading,",
+			"    this.onSuccess,",
+			"    this.onError,",
+			"  });",
+			"",
+			"",
+			"  final Widget Function(BuildContext context, {{ states.loading }}) loading;",
+			"  final Widget Function(BuildContext context, {{ states.success }}) success;",
+			"  final Widget Function(BuildContext context, {{ states.error }}) error;",
+			"",
+			"  final void Function(BuildContext context, {{ states.loading }})? onLoading;",
+			"  final void Function(BuildContext context, {{ states.success }})? onSuccess;",
+			"  final void Function(BuildContext context, {{ states.error }})? onError;",
+			"",
+			"\t@override",
+			"\tWidget build(BuildContext context) {",
+			"\t\treturn  BlocConsumer<SubjectBloc, SubjectState>(",
+			"\t\t\tlistener: (context, state) => state.map(",
+			"\t\t\t\t\tloading: (loading) => onLoading?.call(context, loading),",
+			"\t\t\t\t\tsuccess: (success) => onSuccess?.call(context, success),",
+			"\t\t\t\t\terror: (error) => onError?.call(context, error),",
+			"\t\t\t\t)",
+			"\t\t\t},",
+			"\t\t\tbuilder: (context, state) {",
+			"\t\t\t  return state.map(",
+			"\t\t\t    initial: (s) => initial?.call(context, s) ?? const SizedBox.shrink(),",
+			"\t\t\t    loading: (s) => loading(context, s),",
+			"\t\t\t    success: (s) => success(context, s),",
+			"\t\t\t    error: (s) => error(context, s),",
+			"\t\t\t  );",
+			"\t\t\t},",
+			"\t\t);",
+			"\t}",
+			"}",
+		]
+	}
+}

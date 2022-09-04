@@ -1,0 +1,10 @@
+import 'package:dio/dio.dart';
+import 'package:retrofit/retrofit.dart';
+
+part 'record_api.g.dart';
+
+@RestApi()
+abstract class RecordAPI {
+  factory RecordAPI(Dio dio, {String baseUrl}) = _RecordAPI;
+
+}

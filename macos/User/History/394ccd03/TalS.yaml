@@ -1,0 +1,7 @@
+type: flow
+
+screens:
+  payment_webview:
+
+feedback:
+  type: dialog

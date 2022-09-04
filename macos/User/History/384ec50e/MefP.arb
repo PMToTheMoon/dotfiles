@@ -1,0 +1,59 @@
+{
+  "app_name": "Zanalys",
+
+  "@_UI_KIT": {
+  },
+  "home_app_bar_subtitle": "bonjour",
+  "home_app_bar_title": "Docteur {firstName} 👋",
+  "@home_app_bar_title": {
+    "placeholders": {
+        "firstName": {
+            "type": "String"
+        }
+    }
+  },
+
+  "@_ERROR": {
+  },
+  "error_session_expired": "Votre session a expiré, veuillez vous reconnecter",
+  "error_undefined": "Une erreur est survenue. Merci de vérifier votre connexion et de réessayer",
+  "error_email_invalid": "L'identifié renseigné est invalide",
+  "error_password_invalid": "Le mot de passe renseigné est invalide",
+
+  "@_SIGN_IN": {
+  },
+  "sign_in_title": "Connexion",
+  "sign_in_description": "Bienvenue sur zanalys pour vous connecter veuillez récupérer l’identifiant qui vous a été transmis par mail",
+  "sign_in_hint_id": "Identifiant zanalys",
+  "sign_in_hint_password": "Mot de passe",
+  "sign_in_button": "Se connecter",
+  "sign_in_keep_save_id": "Se souvenir de moi",
+
+  "@_HOME": {
+  },
+  "home_title": "Bonjour Docteur",
+  "home_button_take_photo": "Prendre une Photo",
+
+  "@_IMAGE_PICKER": {
+  },
+  "image_picker_gallery": "Galerie",
+  "image_picker_camera": "Appareil photo",
+
+  "@_OTP": {
+  },
+  "otp_title": "Double authentification",
+  "otp_description": "Un code vous a été envoyé par mail. Veuillez entrer \nce dernier pour vous connecter",
+  "otp_button": "Valider",
+
+  "@_UPLOAD_DOCUMENT": {
+  },
+  "upload_document_title": "Ajout de photo au dossier",
+  "upload_document_hint_access_code": "Code d'accès",
+  "upload_document_button": "Envoyer photo",
+  "upload_document_success": "Votre fichier a été ajouté",
+  
+  "@_UPLOAD_CONFIRMATION": {
+  },
+  "upload_document_confirmation_title": "Ajouter photo au dossier",
+  "upload_document_confirmation_label": "Votre fichier a été ajouté"
+}

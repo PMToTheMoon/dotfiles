@@ -1,0 +1,1 @@
+{"version":1,"resource":"file:///Users/pm/Project/zanalys-app-flutter/packages/zanalys_api/lib/src/models/sign_in_Status.freezed.dart","entries":[{"id":"ySIm.dart","source":"Renaming SignInStatus to LognInStatus","timestamp":1654519966345},{"id":"JpZ7.dart","source":"Renaming LognInStatus to LogInStatus","timestamp":1654519973422}]}

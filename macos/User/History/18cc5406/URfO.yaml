@@ -1,0 +1,25 @@
+api: ClientName
+
+baseUrl: "http://test.onmyride.com"
+
+endpoints:
+  login:
+    route: "/login"
+    method: GET|POST|PUT|PATCH|DELETE
+    mime-type: json
+    pre-hook:
+    post-hook: 
+  
+    params:
+      paramA: &type
+      paramB: &type
+  
+    body: &type
+
+    # define output type
+    output: &type
+
+    # define multiple possible output with different types
+    outputs:
+      success: &type
+      error: &type

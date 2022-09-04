@@ -1,0 +1,9 @@
+list_view:
+  bloc:
+    stream_view_bloc:
+      subject: HomeRecords
+      state:
+        type: List<RecordsCardData>?
+        import: '$package:common/common.dart'
+      source:
+        

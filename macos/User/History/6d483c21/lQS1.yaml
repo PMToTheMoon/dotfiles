@@ -1,0 +1,7 @@
+target: output
+
+bonemeal:
+  generators:
+    test_generator:
+      options:
+        test: false

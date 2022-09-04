@@ -1,0 +1,6 @@
+Invalid argument(s): `EN_ATTENTE_INTERPRETATION` is not one of the supported values: NOUVEAU, BROUILLON, EN_COURS, EN_ATTENTE_RDV, EN_ATTENTE_PAIEMENT_FUTUR, EN_ATTENTE_PAIEMENT, EN_ATTENTE_TELECHARGEMENT, EN_ATTENTE_RAPPORT, EN_ATTENTE_RAPPORT_COMPLET, EN_ATTENTE_RAPPORT_MEDECIN, EN_ATTENTE_AVIS_MEDECIN, CLOTURE, CLOTURE_ANOMALIE, ABANDONNE_PRESTATAIRE, REFUSE_PRESTATAIRE, REFUSE_MEDECIN, DETRUIT
+package:json_annotation/src/enum_helpers.dart 37:5     $enumDecodeNullable
+package:models/src/records/record/record.g.dart 28:11  _$RecordFromJson
+package:models/src/records/record/record.dart 57:57    new Record.fromJson
+test/record_from_json_test.dart 19:18                  main.<fn>.<fn>
+

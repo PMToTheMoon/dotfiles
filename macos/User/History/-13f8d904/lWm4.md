@@ -1,0 +1,2 @@
+Hello {{name}} jzipjp!
+{{> footer }}

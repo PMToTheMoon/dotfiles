@@ -1,0 +1,8 @@
+page:
+  route: "/home"
+  layout:
+    name: HomeLayout
+    type: Custom
+    children:
+      - map
+      - reservation_form

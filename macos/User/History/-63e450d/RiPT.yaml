@@ -1,0 +1,6 @@
+api: MyApi
+authority: "http://myapi.com"
+http_client: http|dio
+default:
+  protocol: http|https
+

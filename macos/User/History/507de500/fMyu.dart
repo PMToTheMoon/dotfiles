@@ -1,0 +1,1 @@
+class FormFieldSeed<ValueType, ControllerType> {}

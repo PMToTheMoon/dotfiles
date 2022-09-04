@@ -1,0 +1,1 @@
+la distinction entre les pages et le flow n'est pas claire.

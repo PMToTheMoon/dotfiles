@@ -1,0 +1,1 @@
+Sub-classes does not inherit from duper class constructor.

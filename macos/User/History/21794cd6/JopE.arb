@@ -1,0 +1,232 @@
+{
+  "@_COMMON": {
+  },
+  "example": "example: {param}",
+  "@example": {
+    "placeholders": {
+        "example": {
+            "type": "String"
+        }
+    }
+  },
+  "search_bar_hint": "Rechercher ici…",
+  "profile_popover_profile_button": "Mon profile",
+  "profile_popover_personal_information": "Informations personnelles",
+  "profile_popover_documents_button": "Contrats et documents",
+  "profile_popover_logout_button": "Déconnexion",
+  "delete": "Supprimer",
+  "save": "SAUVEGARDER",
+  "share_by_email": "PARTAGER PAR EMAIL",
+  "cancel": "Annuler",
+
+  "period_ended": "{start} - {end}",
+  "@period_ended": {
+    "placeholders": {
+        "start": {
+            "type": "DateTime",
+            "format": "yMMM"
+        },
+        "end": {
+          "type": "DateTime",
+          "format": "yMMM"
+        }
+    }
+  },
+  "period_ongoing": "En cour depuis {start}",
+  "@period_ongoing": {
+    "placeholders": {
+        "start": {
+            "type": "DateTime",
+            "format": "yMMM"
+        }
+    }
+  },
+  
+  "@_ERRORS": {
+  },
+  "error_undefined": "Une erreur est survenue. Merci de réessayer plus tard. Si le problème persiste, contactez le service client.",
+  
+  
+  "@_FORM":{
+  },
+  "date_label": "Date",
+
+  "first_name_label": "Prénom",
+  "first_name_hint": "Jeanne",
+  
+  "last_name_label": "Nom",
+  "last_name_hint": "Dupont",
+  
+  "email_label": "Adresse email",
+  "email_hint": "Exemple@email.com",
+
+  "description_label": "Description",
+  "description_hint": "Decrivez-vous en quelques lignes...",
+  
+  "phone_label": "Téléphone",
+  "phone_hint": "Votre numéro de téléphone",
+  
+  "password_label": "Mot de passe",
+  "password_hint": "Entrez votre mot de passe",
+  "optional_label": "(facultatif)",
+
+
+  "@_FORM_ERROR":{
+  },
+  "form_error_empty_field": "Ce champ ne peut pas être vide",
+  "form_error_invalid_email": "L'email renseigné est invalide",
+  "form_error_invalid_email": "L'email renseigné est invalide",
+  "form_error_date_is_not_after": "La date ne peut pas être antérieure a {date}",
+  "@form_error_date_is_not_after": {
+    "placeholders": {
+        "date": {
+            "type": "DateTime",
+            "format": "yM"
+        }
+    }
+  },
+  "form_error_date_is_not_before": "La date ne peut pas être postérieure a {date}",
+  "@form_error_date_is_not_before": {
+  "placeholders": {
+        "date": {
+            "type": "DateTime",
+            "format": "yM"
+        }
+    }
+  },
+  "invalid_date_format": "La date doit être au format {format}",
+  "@invalid_date_format": {
+    "placeholders": {
+      "format": {
+          "type": "String"
+      }
+    }
+  },
+  "form_error_min_length": "Ce champ doit contenir au moins {number} caractères",
+  "@from_error_min_length": {
+    "placehors": {
+      "number": {
+        "type": "number"
+      }
+    }
+  },
+  "form_error_max_length": "COUNT,plural, Ce champ ne doit pas contenir plus de =1{{COUNT} caractère} other{{COUNT} caractères}",
+  "@from_error_max_length": {
+    "placeholders": {
+      "COUNT": {
+        "type": "int"
+      }
+    }
+  },
+
+  "@_AUTH": {
+  },
+  "auth_brand_display_title_1": "Le monde du",
+  "auth_brand_display_title_2": "travail évolue,",
+  "auth_brand_display_title_3": "avec vous !",
+  "auth_brand_display_text": "Faites décoller votre carrière grâce à notre plateforme de recrutement, où candidats et entreprises se rencontrent en un clic.",
+  
+  "auth_app_bar_services_link": "Nos services",
+  "auth_app_bar_information_link": "A propos",
+  "auth_app_bar_contact_link": "A propos",
+
+  "login_title": "Hey, ravis de vous revoir!",
+  "login_subtitle": "Connectez-vous avec vos identifiants",
+  "login_remember_credentials_text": "Se souvenir de moi",
+  "login_button": "Se connecter",
+  "login_signin_link_text": "Vous n’avez pas encore de compte ?",
+  "login_signin_link_button": "Enregistrez-vous",
+
+  "signin_title": "Bienvenue chez TechByTech !",
+  "signin_subtitle": "Veuillez entrez vos informations.",
+  "signin_remember_credentials_text": "Se souvenir de moi",
+  "signin_tcu_text": "J’accepte les  Conditions Générales d’Utilisations de TechByTech",
+  "signin_button": "S’enregistrer",
+  "signin_login_link_text": "Vous avez déjà un compte ?",
+  "signin_login_link_button": " Connectez-vous",
+
+
+  "@CANDIDATE_PROFILE": {
+  },
+  "candidate_profile_header_title": "Informations personnelles",
+  "candidate_profile_header_text": "Gérez les paramètres et informations de de votre profil",
+  "candidate_profile_tab_user": "Mon profile",
+  "candidate_profile_tab_professional_experiences": "Expériences professionnelles",
+  "candidate_profile_tab_background": "Formations",
+  "candidate_profile_tab_skills": "Compétances",
+
+  "@_CANDIDATE_SKILLS": {
+  },
+  "candidate_skills_title": "Ajouter une nouvelle compétence",
+  "candidate_skills_subtitle": "Sélectionne ou saisie tes compétences et appuyez sur entrer pour valider",
+  "candidate_skills_add_skill_to_list": "Ajouter à la liste",
+  "candidate_skills_list_skill_number_prefix": "Votre profil contient",
+  "candidate_skills_list_skill_number": "{COUNT,plural, =1{{COUNT} compétence visible} other{{COUNT} compétences visibles}}",
+  "@candidate_skills_list_skill_number":  {
+    "placeholders": {
+      "COUNT": {
+        "type": "int"
+      }
+    }
+  },
+  "candidate_skills_list_skill_number_suffix": "par les récruteurs",
+  "candidate_skills_list_empty_text": "Aucune compétence n'est ajoutée dans votre profile.\nCliquez sur la barre de recherche pour chercher puis ajouter une compétence.",
+
+  "@_PROFESSIONAL_EXPERIENCE": {
+  },
+  "professional_experience_empty_description_text": "Aucune description.",
+  "professional_experience_contextual_menu_edit": "Modifier",
+  "professional_experience_contextual_menu_delete": "Supprimer",
+  "new_professional_experience_from_tile": "Ajouter une nouvelle expérience",
+  "new_professional_experience_from_button": "Ajouter l'experience",
+  "edit_professional_experience_from_button": "Enregister les modifications",
+  
+  "@_PROFESSIONAL_EXPERIENCE_FORM": {
+  },
+  "professional_experience_form_title_label": "Intitulé du poste",
+  "professional_experience_form_title_hint": "ex: Developpeur full stack",
+  
+  "professional_experience_form_company_label": "Nom de l’entreprise",
+  "professional_experience_form_company_hint": "Entrez le nom de l’entreprise",
+  
+  "professional_experience_form_location_label": "Lieu",
+  "professional_experience_form_location_hint": "Entrez le lieu",
+  
+  "professional_experience_form_start_date_label": "Début",
+  "professional_experience_form_end_date_label": "Fin",
+  
+  "professional_experience_form_description_label": "Description des tâches",
+  "professional_experience_form_description_hint": "Développment du back-end...",
+
+  "professional_experience_form_ongoing_job": "Poste en cours",
+
+  "@_EDUCATION": {
+  },
+  "education_empty_description_text": "Aucune description.",
+  "education_contextual_menu_edit": "Modifier",
+  "education_contextual_menu_delete": "Supprimer",
+  "new_education_from_tile": "Ajouter une nouvelle formations",
+  "new_education_from_button": "Ajouter la formation",
+  "edit_education_from_button": "Enregister les modifications",
+  
+  "@_CANDIDATE_EDUCATIONS_FORM": {
+  },
+  "education_form_title_label": "Intitulé du diplôme",
+  "education_form_title_hint": "ex: DUT informatique",
+  
+  "education_form_school_label": "Nom de l’etablissment",
+  "education_form_school_hint": "Entrez le nom de l’établissment",
+  
+  "education_form_location_label": "Lieu",
+  "education_form_location_hint": "Entrez le lieu",
+  
+  "education_form_start_date_label": "Début",
+  "education_form_end_date_label": "Fin",
+  
+  "education_form_description_label": "Description des tâches",
+  "education_form_description_hint": "Apprentissage des notions d'architecture logicielle...",
+
+  "education_form_ongoing_job": "Formation en cours",
+  
+  "@_END": "no trailing space"
+}

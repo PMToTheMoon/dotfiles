@@ -1,0 +1,7 @@
+---
+models:
+version: 2.0
+---
+models:
+  user:
+    name: String

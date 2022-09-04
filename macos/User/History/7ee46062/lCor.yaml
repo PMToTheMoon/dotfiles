@@ -1,0 +1,8 @@
+generators:
+  yaml_content_based:
+    import: package:bonemeal_yaml/bonemeal_yaml.dart
+    factories: [contentBasedGeneratorFactory]
+    generator_extensions:
+      .yaml: [.dart]
+    defaults:
+      generate_for: ['**.yaml']

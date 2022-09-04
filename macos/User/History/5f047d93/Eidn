@@ -1,0 +1,15 @@
+import 'package:dio/dio.dart';
+import 'package:retrofit/retrofit.dart';
+
+part 'record_api.g.dart';
+
+@RestApi()
+abstract class RecordAPI {
+  factory RecordAPI(Dio dio, {String baseUrl}) = _RecordAPI;
+
+  @GET('/api/dossier/cpsUser/{id}/dossiers')
+  Future<List<CspUserRecord>> getCspUserRecords(@Path('id') String id);
+
+  @DELETE('/api/dossier/{id}')
+  Future<void> deleteRecord(@Path('id') String id);
+}

@@ -1,0 +1,32 @@
+Jun 25, 2022 7:50:30 PM org.eclipse.lemminx.XMLLanguageServer initialize
+INFO: Initializing XML Language server
+LemMinX Server info:
+ - Version : 0.20.0
+ - Native Image
+ - VM Version : 17.0.2
+ - Git [Branch 6e1aecb3182fe156f699aec0bbff0e196c1bd7fb] 6e1aecb - [maven-release-plugin] prepare release 0.20.0
+Jun 29, 2022 7:50:54 PM org.eclipse.lemminx.XMLLanguageServer initialize
+INFO: Initializing XML Language server
+LemMinX Server info:
+ - Version : 0.20.0
+ - Native Image
+ - VM Version : 17.0.2
+ - Git [Branch 6e1aecb3182fe156f699aec0bbff0e196c1bd7fb] 6e1aecb - [maven-release-plugin] prepare release 0.20.0
+Jun 30, 2022 8:58:54 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Jun 30, 2022 8:59:01 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Jun 30, 2022 9:03:20 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Jun 30, 2022 9:30:15 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Jun 30, 2022 9:30:17 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Jun 30, 2022 11:07:42 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Jun 30, 2022 12:24:02 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Jun 30, 2022 12:24:03 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Jun 30, 2022 12:39:26 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace

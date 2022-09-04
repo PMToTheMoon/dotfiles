@@ -1,0 +1,5 @@
+test: String
+
+test2:
+  fieldA: String
+  fieldB: String

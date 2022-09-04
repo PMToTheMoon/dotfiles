@@ -1,0 +1,5 @@
+arb-dir: assets/translations
+template-arb-file: zanalys_fr.arb
+output-localization-file: lib/l10n/app_localizations.dart
+nullable-getter: false
+synthetic-package: false

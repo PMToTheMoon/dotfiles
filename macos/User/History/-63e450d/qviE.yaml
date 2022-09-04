@@ -1,0 +1,7 @@
+api: MyApi
+authority: "http://myapi.com"
+http_client: http|dio
+models: vanilla|freezed
+default:
+  protocol: http|https
+

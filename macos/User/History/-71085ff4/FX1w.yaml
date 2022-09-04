@@ -1,0 +1,36 @@
+api: ClientName
+
+# retry ?
+# auth ?
+# how to throw domain exceptions ?
+# maybe domain exceptions should be thrown in repository
+
+baseUrl: "http://test.onmyride.com"
+options:
+  mime-type: json
+  timeout: 3s
+
+endpoints:
+  login:
+    route: "/login"
+    method: GET|POST|PUT|PATCH|DELETE
+    mime-type: json
+    timeout: 3s
+
+    # seams a bad idea
+    pre-hook: handleData
+    post-hook: handleOutput
+  
+    params:
+      paramA: &type
+      paramB: &type
+  
+    body: &type
+
+    # define output type
+    output: &type
+
+    # define multiple possible output with different types
+    outputs:
+      success: &type
+      error: &type

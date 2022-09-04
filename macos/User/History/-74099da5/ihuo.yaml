@@ -1,0 +1,7 @@
+fetch_bloc:
+---
+subject: PatientList
+source:
+  type: PatientRepository
+  fetch_function: fetch 
+  received_object_type: part.yaml

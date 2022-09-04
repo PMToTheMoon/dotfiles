@@ -1,0 +1,7 @@
+Instance of 'Response<String>'
+package:tbt_api/src/tbt_public_client.dart 34:5  TbtErrorConverter.convertError
+package:chopper/src/base.dart 239:46             ChopperClient._handleErrorResponse
+package:chopper/src/base.dart 338:19             ChopperClient.send
+===== asynchronous gap ===========================
+test/public_client_test.dart 13:24               main.<fn>.<fn>
+

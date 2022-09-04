@@ -1,0 +1,8 @@
+test: String
+
+test2:
+  fieldA: String
+  fieldB: String
+  fieldD:
+    aa: int
+    vv: double

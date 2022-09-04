@@ -1,0 +1,26 @@
+name: bonemeal_runner
+version: 0.0.1
+publish_to: none
+
+environment:
+  sdk: '>=2.17.0 <3.0.0'
+
+dependencies:
+  # bonemeal
+  bonemeal:
+    path: ../bonemeal
+  bonemeal_config:
+    path: ../bonemeal_config
+
+  args: ^2.3.1
+  code_builder: ^4.1.0
+  console: ^4.1.0
+  dart_style: ^2.2.3
+  frontend_server_client: ^2.1.3
+  intl: ^0.17.0
+  io: ^1.0.3
+  logging: ^1.0.2
+  stack_trace: ^1.10.0
+
+  pool: ^1.5.0
+  graphs: ^2.1.0

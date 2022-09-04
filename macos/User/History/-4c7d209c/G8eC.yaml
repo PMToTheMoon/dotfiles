@@ -1,0 +1,82 @@
+name: tech_by_tech
+description: A new Flutter project.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.5 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  translations:
+    path: packages/translations
+  models:
+    path: packages/models
+  common:
+    path: packages/common
+  tbt_api:
+    path: packages/tbt_api
+  
+  neat: ^0.2.4
+  go_router_prototype: ^0.1.0
+  bloc: ^8.0.3
+  flutter_bloc: ^8.0.1
+  freezed_annotation: ^2.1.0
+  shared_preferences: ^2.0.15
+  url_launcher: ^6.1.5
+  form_builder_validators: ^8.2.0
+  json_serializable: ^6.3.1
+  bloc_concurrency: ^0.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  build_runner: ^2.2.0
+  freezed: ^2.1.0+1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - packages/common/lib/fonts/Poppins/
+    - packages/common/lib/fonts/CrimsonPro/
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: packages/common/lib/fonts/Poppins/Poppins-Thin.ttf
+          weight: 100
+        - asset: packages/common/lib/fonts/Poppins/Poppins-ExtraLight.ttf
+          weight: 200
+        - asset: packages/common/lib/fonts/Poppins/Poppins-Light.ttf
+          weight: 300
+        - asset: packages/common/lib/fonts/Poppins/Poppins-Regular.ttf
+          weight: 400
+        - asset: packages/common/lib/fonts/Poppins/Poppins-Medium.ttf
+          weight: 500
+        - asset: packages/common/lib/fonts/Poppins/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: packages/common/lib/fonts/Poppins/Poppins-Bold.ttf
+          weight: 700
+        - asset: packages/common/lib/fonts/Poppins/Poppins-ExtraBold.ttf
+          weight: 800
+        - asset: packages/common/lib/fonts/Poppins/Poppins-Black.ttf
+          weight: 900
+    - family: CrimsonPro
+      fonts:
+        - asset: packages/common/lib/fonts/CrimsonPro/CrimsonPro-ExtraLight.ttf
+          weight: 200
+        - asset: packages/common/lib/fonts/CrimsonPro/CrimsonPro-Light.ttf
+          weight: 300
+        - asset: packages/common/lib/fonts/CrimsonPro/CrimsonPro-Regular.ttf
+          weight: 400
+        - asset: packages/common/lib/fonts/CrimsonPro/CrimsonPro-Medium.ttf
+          weight: 500
+        - asset: packages/common/lib/fonts/CrimsonPro/CrimsonPro-SemiBold.ttf
+          weight: 600
+        - asset: packages/common/lib/fonts/CrimsonPro/CrimsonPro-Bold.ttf
+          weight: 700
+        - asset: packages/common/lib/fonts/CrimsonPro/CrimsonPro-ExtraBold.ttf
+          weight: 800
+        - asset: packages/common/lib/fonts/CrimsonPro/CrimsonPro-Black.ttf
+          weight: 900 

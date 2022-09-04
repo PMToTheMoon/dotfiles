@@ -1,0 +1,6 @@
+M1:
+  f1: int
+  f2: String
+
+Test2:
+  fieldName: int

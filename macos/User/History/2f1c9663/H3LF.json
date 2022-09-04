@@ -1,0 +1,128 @@
+{
+  "window.menuBarVisibility": "toggle",
+  "customWindowZoom.zoomLevelChangeValue": 0.0001,
+  "zenMode.restore": true,
+  "zenMode.centerLayout": false,
+  "zenMode.fullScreen": false,
+  "zenMode.hideLineNumbers": false,
+  "editor.minimap.enabled": false,
+  "zenMode.hideTabs": false,
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [
+      80
+    ],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false,
+  },
+  "dart.previewFlutterUiGuides": true,
+  "editor.formatOnSave": true,
+  "dart.embedDevTools": false,
+  "workbench.tree.indent": 16,
+  "explorer.compactFolders": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "auto-comment-blocks.singleLineBlockOnEnter": true,
+  "auto-comment-blocks.slashStyleBlocks": [
+    "dart"
+  ],
+  "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?_",
+  "cSpell.enabledLanguageIds": [
+    "asciidoc",
+    "c",
+    "cpp",
+    "csharp",
+    "css",
+    "git-commit",
+    "go",
+    "graphql",
+    "handlebars",
+    "haskell",
+    "html",
+    "jade",
+    "java",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "jsonc",
+    "jupyter",
+    "latex",
+    "less",
+    "markdown",
+    "php",
+    "plaintext",
+    "python",
+    "pug",
+    "restructuredtext",
+    "rust",
+    "scala",
+    "scss",
+    "text",
+    "typescript",
+    "typescriptreact",
+    "yaml",
+    "yml",
+    "dart"
+  ],
+  "polacode.target": "snippet",
+  "polacode.shadow": "rgba(0, 0, 0, 0.55) 0px 10px 28px",
+  "codesnap.containerPadding": "1em",
+  "codesnap.showWindowControls": false,
+  "cSpell.language": "en,fr",
+  "xml.format.emptyElements": "collapse",
+  "xml.validation.schema.enabled": "never",
+  "xml.validation.noGrammar": "ignore",
+  "highlight.regexes": {
+    "^(class) ": { // A regex will be created from this string, don't forget to double escape it
+      "regexFlags": "gm", // Flags used when building this regex
+      // "filterLanguageRegex": "markdown", // Apply only if current file's language matches this regex. Requires double escaping
+      // "filterFileRegex": ".*\\.ext", // Apply only if the current file's path matches this regex. Requires double escaping
+      "decorations": [ // Decoration options to apply to the capturing groups
+        {
+          "color": "#ed760e",
+          "backgroundColor": "transparent",
+          "fontWeight": "bold",
+          "border": "1px solid #ed760e",
+          "borderRadius": "3px",
+        }, // Decoration options to apply to the first capturing group, in this case "//TODO"
+        // Decoration options to apply to the second capturing group, in this case ":"
+      ]
+    },
+  },
+  "debug.showInStatusBar": "never",
+  "git.enableStatusBarSync": false,
+  "cSpell.showStatus": false,
+  "notebook.showCellStatusBar": "hidden",
+  "dart.debugExternalPackageLibraries": true,
+  "dart.debugSdkLibraries": true,
+  "comment-divider.shouldLengthIncludeIndent": true,
+  //RUBY
+  "ruby.useBundler": true, //run non-lint commands with bundle exec
+  "ruby.useLanguageServer": true, // use the internal language server (see below)
+  "ruby.lint": {
+    "rubocop": {
+      "useBundler": true // enable rubocop via bundler
+    },
+    "reek": {
+      "useBundler": true // enable reek via bundler
+    }
+  },
+  "editor.tabSize": 2,
+  "redhat.telemetry.enabled": true,
+  "codesnap.showLineNumbers": false,
+  "cSpell.userWords": [
+    "lerp",
+    "Overridable",
+    "posix",
+    "Pubspec",
+    "recase",
+    "unawaited"
+  ],
+  "workbench.statusBar.visible": false,
+  "dart.devToolsLocation": "external",
+  "window.zoomLevel": 1,
+  // "ruby.format": "rubocop"
+}

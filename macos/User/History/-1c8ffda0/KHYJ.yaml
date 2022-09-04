@@ -1,0 +1,15 @@
+test: String
+
+test2:
+  fieldA: String
+  fieldB: String
+  fieldC:
+    - 0
+    - 1
+    - 2
+  fieldD:
+    aa: 1
+    vv:
+      - a
+      - b
+      - c

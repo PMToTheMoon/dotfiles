@@ -1,0 +1,7 @@
+model: bloc.yaml
+---
+import: 'path/to/nice.dart'
+type: SuperUser
+fields:
+  a: Sting
+  b: int

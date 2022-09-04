@@ -1,0 +1,27 @@
+api: ClientName
+
+baseUrl: "http://test.onmyride.com"
+
+
+
+endpoints:
+  login:
+    route: "/login"
+    method: POST
+  
+    params:
+      params: type
+  
+    body:
+      mime-type: json
+      data:
+        email: String
+        password: String
+  
+    outputs:
+  
+      success:
+        status: String
+
+      error:
+        status: String

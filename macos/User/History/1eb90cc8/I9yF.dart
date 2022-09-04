@@ -1,0 +1,12 @@
+import 'dart:mirrors';
+
+void test() {
+  print("hello mirros");
+}
+
+void main() {
+  final t = reflect(test);
+  if (t is ClosureMirror) {
+    print(t.function.location?.sourceUri.toFilePath());
+  }
+}

@@ -1,0 +1,88 @@
+import 'package:bonemeal_core/bonemeal_core.dart';
+import 'package:bonemeal_core/src/asset/asset_id.dart';
+import 'package:bonemeal_core/src/asset/asset_writer.dart';
+import 'package:bonemeal_core/src/meta_object/directive_allocator.dart';
+import 'package:bonemeal_core/src/meta_object/emitter.dart';
+import 'package:meta/meta.dart';
+import 'package:path/path.dart' as p;
+
+import 'formatter.dart';
+
+abstract class BuildStep {
+  BuildStep({
+    required this.path,
+    required this.writer,
+  });
+
+  final String path;
+  final SyncAssetWriter writer;
+
+  @protected
+  Allocator get allocator;
+
+  String emit(Spec spec) {
+    final emitter = defaultEmitter(allocator);
+    final content = spec.accept(emitter).toString();
+    final formattedContent = formatter.format(content);
+    writer.writeAsString(AssetId(path), formattedContent);
+    return path;
+  }
+
+  T build<T>(MetaObject<T> object) {
+    final childStep = _childStep(object.path);
+    return object.resolve(childStep);
+  }
+
+  BuildStep _childStep(String objectPath) {
+    return BuildStepImpl(
+      path: p.join(path, objectPath),
+      writer: writer,
+    );
+  }
+
+  T buildPart<T>(MetaObject<T> object);
+}
+
+class BuildStepImpl extends BuildStep {
+  BuildStepImpl({
+    required super.path,
+    required super.writer,
+  }) : allocator = BuildStepAllocator(path);
+
+  @override
+  final BuildStepAllocator allocator;
+
+  @override
+  T buildPart<T>(MetaObject<T> object) {
+    final childStep = _partStep(object.path);
+    return object.resolve(childStep);
+  }
+
+  BuildStep _partStep(String objectPath) {
+    final partPath = p.join(p.dirname(path), objectPath);
+    final partAllocator = PartOfAllocator(path, partPath, allocator);
+    return PartBuildStep(
+      path: partPath,
+      writer: writer,
+      allocator: partAllocator,
+    );
+  }
+}
+
+class PartBuildStep extends BuildStep {
+  PartBuildStep(BuildStepImpl parent, String path)
+      : allocator = PartOfAllocator(parent.path, path, parent.allocator),
+        super(
+          path: path,
+          writer: parent.writer,
+        );
+
+  final PartOfAllocator allocator;
+
+  @override
+  DartEmitter get emitter => DartEmitter(allocator: allocator);
+
+  @override
+  T buildPart<T>(MetaObject<T> object) =>
+      throw "Creating part from a part build step ins't allowed";
+}

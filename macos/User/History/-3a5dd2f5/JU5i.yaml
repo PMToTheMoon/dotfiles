@@ -1,0 +1,14 @@
+name: mason_hooks
+description: A new brick created with the Mason CLI.
+
+version: 0.0.1
+
+environment:
+  mason: any
+
+vars:
+  name:
+    type: string
+    description: Your name
+    default: Dash
+    prompt: What is your name?

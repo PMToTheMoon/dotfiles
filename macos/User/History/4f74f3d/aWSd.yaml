@@ -1,0 +1,13 @@
+builders:
+  transformer_builder:
+    import: "package:bonemeal_gen/bonemeal_gen.dart"
+    builder_factories: ["transformerBuilder"]
+    build_extensions: {".dart": [".bgen.dart"]}
+    auto_apply: dependents
+    build_to: source
+  # hook_builder:
+  #   import: "package:bonemeal_gen/bonemeal_gen.dart"
+  #   builder_factories: ["hookBuilder"]
+  #   build_extensions: {".dart": [".hook.dart"]}
+  #   auto_apply: dependents
+  #   build_to: source

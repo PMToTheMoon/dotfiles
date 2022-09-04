@@ -1,0 +1,9 @@
+name: test_generator
+publish_to: none
+
+environment:
+  sdk: '>=2.17.0 <3.0.0'
+
+dependencies:
+  bonemeal:
+    path: ../../../packages/bonemeal

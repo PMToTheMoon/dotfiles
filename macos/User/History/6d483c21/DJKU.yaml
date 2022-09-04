@@ -1,0 +1,6 @@
+targets:
+  $default:
+    builders:
+      my_generator:
+        options: 
+          some_key: "Some value the users will want in release mode"

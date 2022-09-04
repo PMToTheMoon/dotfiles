@@ -1,0 +1,9 @@
+type: flow
+
+screens:
+  payment_webview:
+
+feedbacks:
+  ConfirmationDialog:
+    type: dialog
+    trigger: success

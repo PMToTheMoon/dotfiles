@@ -1,0 +1,75 @@
+import 'package:flutter/material.dart' hide Page;
+import 'package:common/common.dart';
+
+class ContactPageArguments {
+  const ContactPageArguments();
+}
+
+class ContactPageResult {
+  const ContactPageResult();
+}
+
+class ContactPage extends StatelessWidget {
+  static Widget builder(BuildContext context) {
+    try {
+      final args =
+          ModalRoute.of(context)!.settings.arguments as ContactPageArguments;
+      return ContactPage(
+        arguments: args,
+      );
+    } catch (_) {
+      throw InvalidPageArguments<ContactPage>();
+    }
+  }
+
+  static Future<ContactPageResult> open(
+    BuildContext context,
+    ContactPageArguments arguments,
+  ) async {
+    final result = await Navigator.of(context).pushNamed(
+      route,
+      arguments: arguments,
+    );
+    return result as ContactPageResult;
+  }
+
+  static void goBack(
+    BuildContext context,
+    ContactPageResult result,
+  ) =>
+      Navigator.of(context).pop(result);
+
+  const ContactPage({
+    required this.arguments,
+    Key? key,
+  }) : super(key: key);
+
+  final ContactPageArguments arguments;
+
+  @override
+  Widget build(BuildContext context) {
+    return WillPopScope(
+      onWillPop: () async {
+        goBack(context, const ContactPageResult());
+        return false;
+      },
+      child: const _ContactPage(),
+    );
+  }
+}
+
+class _ContactPage extends StatelessWidget {
+  const _ContactPage({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return const Page(
+      alignment: Alignment.center,
+      body: Center(
+        child: Text("Contact"),
+      ),
+    );
+  }
+}

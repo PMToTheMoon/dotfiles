@@ -1,0 +1,14 @@
+name: api
+description: API client generator
+
+version: 0.1.0+1
+
+environment:
+  mason: ">=0.1.0-dev <0.1.0"
+
+vars:
+  input:
+    type: string
+    description: api model file
+    default: Dash
+    prompt: What is your name?

@@ -1,0 +1,7 @@
+stream_sub_cubit:
+---
+subject: Hello
+source:
+  type: User?
+  import: 'package:zanalys/user/user_service.dart'
+  transformer: hello_bloc.dart

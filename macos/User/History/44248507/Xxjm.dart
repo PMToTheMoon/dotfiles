@@ -1,0 +1,11 @@
+export 'billing_address.dart';
+export 'passenger.dart';
+export 'address.dart';
+export 'trip.dart';
+export 'payment_method.dart';
+export 'user_infos.dart';
+export 'user.dart';
+export 'vehicle.dart';
+export 'reservation.dart';
+export 'transaction_status.dart';
+export 'flight_data.dart';

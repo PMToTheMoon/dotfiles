@@ -1,0 +1,70 @@
+Mar 04, 2022 10:10:58 AM org.eclipse.lemminx.XMLLanguageServer initialize
+INFO: Initializing XML Language server
+LemMinX Server info:
+ - Version : 0.19.1
+ - Native Image
+ - VM Version : 1.8.0_272
+ - Git [Branch 6059965ad91cd67cba1c91f4b82714c57dc64fa5] 6059965 - [maven-release-plugin] prepare release 0.19.1
+Mar 04, 2022 10:11:30 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Mar 11, 2022 6:09:04 PM org.eclipse.lemminx.XMLLanguageServer initialize
+INFO: Initializing XML Language server
+LemMinX Server info:
+ - Version : 0.19.1
+ - Native Image
+ - VM Version : 1.8.0_272
+ - Git [Branch 6059965ad91cd67cba1c91f4b82714c57dc64fa5] 6059965 - [maven-release-plugin] prepare release 0.19.1
+Mar 11, 2022 6:09:31 PM org.eclipse.lemminx.uriresolver.CacheResourcesManager lambda$downloadResource$0
+INFO: Downloading http://www.apple.com/DTDs/PropertyList-1.0.dtd to /Users/pm/.lemminx/cache/http/www.apple.com/DTDs/PropertyList-1.0.dtd...
+Mar 11, 2022 6:09:31 PM org.eclipse.lemminx.uriresolver.CacheResourcesManager lambda$downloadResource$0
+INFO: Downloaded http://www.apple.com/DTDs/PropertyList-1.0.dtd to /Users/pm/.lemminx/cache/http/www.apple.com/DTDs/PropertyList-1.0.dtd in 92ms
+Mar 14, 2022 5:56:57 PM org.eclipse.lemminx.XMLLanguageServer initialize
+INFO: Initializing XML Language server
+LemMinX Server info:
+ - Version : 0.19.1
+ - Native Image
+ - VM Version : 1.8.0_272
+ - Git [Branch 6059965ad91cd67cba1c91f4b82714c57dc64fa5] 6059965 - [maven-release-plugin] prepare release 0.19.1
+Apr 22, 2022 4:09:45 PM org.eclipse.lemminx.XMLLanguageServer initialize
+INFO: Initializing XML Language server
+LemMinX Server info:
+ - Version : 0.20.0
+ - Native Image
+ - VM Version : 17.0.2
+ - Git [Branch 6e1aecb3182fe156f699aec0bbff0e196c1bd7fb] 6e1aecb - [maven-release-plugin] prepare release 0.20.0
+Apr 22, 2022 5:44:55 PM org.eclipse.lemminx.XMLLanguageServer initialize
+INFO: Initializing XML Language server
+LemMinX Server info:
+ - Version : 0.20.0
+ - Native Image
+ - VM Version : 17.0.2
+ - Git [Branch 6e1aecb3182fe156f699aec0bbff0e196c1bd7fb] 6e1aecb - [maven-release-plugin] prepare release 0.20.0
+Apr 22, 2022 5:49:35 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Apr 22, 2022 6:00:21 PM org.eclipse.lemminx.XMLLanguageServer initialize
+INFO: Initializing XML Language server
+LemMinX Server info:
+ - Version : 0.20.0
+ - Native Image
+ - VM Version : 17.0.2
+ - Git [Branch 6e1aecb3182fe156f699aec0bbff0e196c1bd7fb] 6e1aecb - [maven-release-plugin] prepare release 0.20.0
+Apr 22, 2022 6:00:22 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Apr 22, 2022 6:00:25 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Apr 22, 2022 6:05:49 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Jun 05, 2022 8:48:24 PM org.eclipse.lemminx.XMLLanguageServer initialize
+INFO: Initializing XML Language server
+LemMinX Server info:
+ - Version : 0.20.0
+ - Native Image
+ - VM Version : 17.0.2
+ - Git [Branch 6e1aecb3182fe156f699aec0bbff0e196c1bd7fb] 6e1aecb - [maven-release-plugin] prepare release 0.20.0
+Jun 09, 2022 2:22:15 PM org.eclipse.lemminx.XMLLanguageServer initialize
+INFO: Initializing XML Language server
+LemMinX Server info:
+ - Version : 0.20.0
+ - Native Image
+ - VM Version : 17.0.2
+ - Git [Branch 6e1aecb3182fe156f699aec0bbff0e196c1bd7fb] 6e1aecb - [maven-release-plugin] prepare release 0.20.0

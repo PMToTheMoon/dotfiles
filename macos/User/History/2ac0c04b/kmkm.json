@@ -1,0 +1,34 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "bonemeal",
+      "cwd": "bonemeal",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "meta_proj",
+      "cwd": "meta_proj",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/meta_proj.dart",
+      "args": [
+        "build",
+      ]
+    },
+    {
+      "name": "meta_proj debug build_runner",
+      "cwd": "meta_proj",
+      "request": "launch",
+      "type": "dart",
+      "program": ".dart_tool/build/entrypoint/build.dart",
+      "args": [
+        "build",
+      ]
+    }
+  ]
+}

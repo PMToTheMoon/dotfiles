@@ -1,0 +1,6 @@
+possibility to have an event transformer
+  - top level function
+  - imported function
+
+possibility to have filter/parameters
+  - save filters in states

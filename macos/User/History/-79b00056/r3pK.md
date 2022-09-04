@@ -1,0 +1,19 @@
+# background
+since how many time you program ?
+
+since how many time you develop using flutter ?
+
+why are you looking for mentorship ?
+  - what are your goal, what do you want to learn ?
+
+# flutter
+what is your speciality with flutter ?
+
+what things do you want to learn with flutter / dart?
+
+what di you prefer with flutter ?
+
+# Engeneering
+describe an ideal architecture for a medium project 
+
+familiar with external service/api integration ?

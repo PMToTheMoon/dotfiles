@@ -1,0 +1,42 @@
+{
+  "rapport": {
+    "syntheseTe": null,
+    "commentaireTe": "reponse sur le web",
+    "dateEnvoiPrestataireMedecin": null,
+    "dateEnvoiTeleexpertise": null
+  },
+  "completedRapport": false,
+  "typeDossier": "MULTI",
+  "referenceDossier": "DM287009086075",
+  "capturePayment": false,
+  "typePrestation": "PRESENTIEL",
+  "presentielRdvMode": "RAPPELE",
+  "finalTotalTTC": null,
+  "uploadedFilesToMakeDownloadableList": []
+}
+
+{
+  "rapport": {
+    "identifiant": 736,
+    "dateEnvoiPrestataireMedecin": null,
+    "prestataireMedecin": null,
+    "dateEnvoiPrestataireTechnique": null,
+    "prestataireTechnique": null,
+    "synthese": "<p>bbbb</p>",
+    "commentaire": "aa",
+    "syntheseTe": null,
+    "commentaireTe": "reponse sur le web",
+    "dateEnvoiTeleexpertise": 1658764344000,
+    "hasFeuilleSoins": null,
+    "teletransmissionAutre": null,
+    "interpretationMulti": null
+  },
+  "completedRapport": true,
+  "typeDossier": "MULTI",
+  "referenceDossier": "DM287009086075",
+  "capturePayment": true,
+  "typePrestation": null,
+  "presentielRdvMode": null,
+  "finalTotalTTC": null,
+  "uploadedFilesToMakeDownloadableList": []
+}

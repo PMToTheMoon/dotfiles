@@ -1,0 +1,26 @@
+name: ipr
+description: A sample command-line application.
+version: 1.0.0
+publish_to: none
+# homepage: https://www.example.com
+
+environment:
+  sdk: '>=2.17.3 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  bonemeal_runner:
+    path: ../../src/bonemeal/bonemeal_runner
+  model_generators:
+    path: ../../src/generators/model_generators
+
+dev_dependencies:
+  # bloc_generators:
+  #   path: ../../src/generators/bloc_generators
+
+  test: ^1.16.0
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true

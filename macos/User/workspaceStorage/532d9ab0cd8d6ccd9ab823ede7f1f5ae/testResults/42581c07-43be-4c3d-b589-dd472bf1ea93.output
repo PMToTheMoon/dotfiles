@@ -1,0 +1,12 @@
+type 'Null' is not a subtype of type 'Map<String, dynamic>' in type cast
+package:models/src/records/record/record.g.dart 75:44  _$RecordFromJson
+package:models/src/records/record/record.dart 59:57    new Record.fromJson
+test/record_from_json_test.dart 13:18                  main.<fn>.<fn>
+
+type 'Null' is not a subtype of type 'bool' in type cast
+package:models/src/records/record/medical_information/medical_information_multi.g.dart 17:42  _$MedicalInformationMultiFromJson
+package:models/src/records/record/medical_information/medical_information_multi.dart 27:7     new MedicalInformationMulti.fromJson
+package:models/src/records/record/record.g.dart 74:56                                         _$RecordFromJson
+package:models/src/records/record/record.dart 59:57                                           new Record.fromJson
+test/record_from_json_test.dart 19:18                                                         main.<fn>.<fn>
+

@@ -1,0 +1,9 @@
+generators:
+  my_generator:
+    import: "package:my_package/builder.dart"
+    builder_factories: ["myBuilder"]
+    build_extensions: {".dart": [".my_package.dart"]}
+    auto_apply: dependents
+    defaults:
+      release_options:
+        some_key: "Some value the users will want in release mode"

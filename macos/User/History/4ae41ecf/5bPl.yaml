@@ -1,0 +1,17 @@
+targets:
+  $default:
+    builders:
+      json_serializable:
+        options:
+          # Checked yaml config
+          any_map: true
+          checked: true
+          disallow_unrecognized_keys: true
+builders:
+  my_builder:
+    import: "package:bonemeal/bonemeal.dart"
+    builder_factories: ["copyBuilder"]
+    # https://github.com/dart-lang/build/blob/master/docs/writing_a_builder.md#capture-groups
+    build_extensions: {"^bin/inputs/in.dart": ["bin/outputs/in.copy.dart"]}
+    auto_apply: dependents
+    build_to: source

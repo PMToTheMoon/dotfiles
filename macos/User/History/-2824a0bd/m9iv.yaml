@@ -1,0 +1,3 @@
+analyze:
+  exclude:
+    __brick__/*

@@ -1,0 +1,6 @@
+Invalid argument(s): A value must be provided. Supported values: RESEAU, ZANALYS
+package:json_annotation/src/enum_helpers.dart 70:5     $enumDecode
+package:models/src/records/record/record.g.dart 49:11  _$RecordFromJson
+package:models/src/records/record/record.dart 57:57    new Record.fromJson
+test/record_from_json_test.dart 19:18                  main.<fn>.<fn>
+

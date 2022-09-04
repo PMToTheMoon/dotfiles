@@ -1,0 +1,73 @@
+Mar 03, 2022 1:57:18 PM org.eclipse.lemminx.XMLLanguageServer initialize
+INFO: Initializing XML Language server
+LemMinX Server info:
+ - Version : 0.19.1
+ - Native Image
+ - VM Version : 1.8.0_272
+ - Git [Branch 6059965ad91cd67cba1c91f4b82714c57dc64fa5] 6059965 - [maven-release-plugin] prepare release 0.19.1
+Mar 03, 2022 1:57:33 PM org.eclipse.lemminx.XMLLanguageServer initialize
+INFO: Initializing XML Language server
+LemMinX Server info:
+ - Version : 0.19.1
+ - Native Image
+ - VM Version : 1.8.0_272
+ - Git [Branch 6059965ad91cd67cba1c91f4b82714c57dc64fa5] 6059965 - [maven-release-plugin] prepare release 0.19.1
+Mar 03, 2022 1:57:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 19
+Mar 03, 2022 1:59:27 PM org.eclipse.lemminx.XMLLanguageServer initialize
+INFO: Initializing XML Language server
+LemMinX Server info:
+ - Version : 0.19.1
+ - Native Image
+ - VM Version : 1.8.0_272
+ - Git [Branch 6059965ad91cd67cba1c91f4b82714c57dc64fa5] 6059965 - [maven-release-plugin] prepare release 0.19.1
+Mar 03, 2022 1:59:56 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Mar 03, 2022 1:59:58 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Mar 03, 2022 2:00:12 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Mar 03, 2022 2:02:34 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Mar 03, 2022 2:03:02 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Mar 03, 2022 2:03:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 106
+Mar 04, 2022 11:59:24 AM org.eclipse.lemminx.XMLLanguageServer initialize
+INFO: Initializing XML Language server
+LemMinX Server info:
+ - Version : 0.19.1
+ - Native Image
+ - VM Version : 1.8.0_272
+ - Git [Branch 6059965ad91cd67cba1c91f4b82714c57dc64fa5] 6059965 - [maven-release-plugin] prepare release 0.19.1
+Mar 04, 2022 12:11:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 70
+Mar 08, 2022 11:54:42 AM org.eclipse.lemminx.XMLLanguageServer initialize
+INFO: Initializing XML Language server
+LemMinX Server info:
+ - Version : 0.19.1
+ - Native Image
+ - VM Version : 1.8.0_272
+ - Git [Branch 6059965ad91cd67cba1c91f4b82714c57dc64fa5] 6059965 - [maven-release-plugin] prepare release 0.19.1
+Mar 11, 2022 10:17:07 AM org.eclipse.lemminx.XMLLanguageServer initialize
+INFO: Initializing XML Language server
+LemMinX Server info:
+ - Version : 0.19.1
+ - Native Image
+ - VM Version : 1.8.0_272
+ - Git [Branch 6059965ad91cd67cba1c91f4b82714c57dc64fa5] 6059965 - [maven-release-plugin] prepare release 0.19.1
+Mar 12, 2022 9:29:39 AM org.eclipse.lemminx.XMLLanguageServer initialize
+INFO: Initializing XML Language server
+LemMinX Server info:
+ - Version : 0.19.1
+ - Native Image
+ - VM Version : 1.8.0_272
+ - Git [Branch 6059965ad91cd67cba1c91f4b82714c57dc64fa5] 6059965 - [maven-release-plugin] prepare release 0.19.1
+Mar 12, 2022 9:30:50 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 242
+Mar 12, 2022 10:06:52 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 768
+Mar 12, 2022 3:20:05 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Mar 12, 2022 3:20:05 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace

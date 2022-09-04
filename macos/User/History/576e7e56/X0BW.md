@@ -1,0 +1,24 @@
+# pain points
+
+# parameters/fields list
+  hard to manage and fields/parameters list
+  hard to make function call with parameter
+  hard to distribute parameters over function call based on actual context (class field, class accessors, function local var, ...)
+
+# child data access
+  hard to access child meta data
+  hard to access parent data
+
+# meta object declaration is fastidious
+  takes time to declare metadata + meta object type parameter
+  solution: remove type parameter
+
+# hook/custom code is a mess
+  hard to write string based code
+  problem with invalid code before generation run
+  build_runner is fastidious
+
+# Use cases
+
+triple state consumers for retartable
+  started/initial => idle/create

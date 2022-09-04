@@ -1,0 +1,3 @@
+class TransformerEntrypoint {
+  const TransformerEntrypoint();
+}

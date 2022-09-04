@@ -1,0 +1,16 @@
+{
+  "rapport": {
+    "syntheseTe": null,
+    "commentaireTe": "reponse sur le web",
+    "dateEnvoiPrestataireMedecin": null,
+    "dateEnvoiTeleexpertise": null
+  },
+  "completedRapport": false,
+  "typeDossier": "MULTI",
+  "referenceDossier": "DM287009086075",
+  "capturePayment": false,
+  "typePrestation": "PRESENTIEL",
+  "presentielRdvMode": "RAPPELE",
+  "finalTotalTTC": null,
+  "uploadedFilesToMakeDownloadableList": []
+}

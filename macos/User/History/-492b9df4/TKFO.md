@@ -1,0 +1,20 @@
+### Referencing code objects
+
+Code objects are referenced using one of the following syntax. There is no type checking. A correct type should reference to a valid code object at compile time, just like regular code. You can use built-in types or custom ones but in that case make sure dependencies files are correctly imported without name conflict.
+
+
+**external object**
+```yaml
+fieldname: Type
+```
+`fieldname`: Name used inside the generator to reference your object `Type`
+`Type`: Exact type of the object referenced in code.
+
+**external object**
+```yaml
+fieldname:
+    fieldA: Type
+    fieldB: Type
+```
+`fieldname`: Name used inside the generator to reference your object `Type`
+`Type`: Exact type of the object referenced in code

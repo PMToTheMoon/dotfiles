@@ -1,0 +1,8 @@
+meta_objects:
+  fetch_bloc_meta_object:
+    import: "package:fetch_generators/bloc.dart"
+    meta_object_factories:
+      - metaFetchBlocFactory
+
+generators:
+  fetch_bloc_generator

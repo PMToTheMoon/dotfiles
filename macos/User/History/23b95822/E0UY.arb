@@ -1,0 +1,13 @@
+{
+  "app_name": "Zanalys",
+
+  "@_UI_KIT": {
+  },
+  "@home_app_bar_title": {
+    "placeholders": {
+        "firstName": {
+            "type": "String"
+        }
+    }
+  },
+}

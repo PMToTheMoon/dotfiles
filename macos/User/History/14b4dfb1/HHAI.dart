@@ -1,0 +1,33 @@
+import 'package:common/common.dart';
+import 'package:flutter/material.dart';
+
+class IdentityShimmer extends StatelessWidget {
+  const IdentityShimmer({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const PaddingSmaller(),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Container(
+            decoration: BoxDecoration(
+                color: Colors.black,
+                borderRadius: BorderRadius.circular(Dimensions.sizeMedium)),
+            height: Dimensions.sizeMedium,
+            width: Dimensions.sizeMedium,
+          ),
+          const SpaceSmall.w(),
+          Container(
+            color: Colors.black,
+            height: 16,
+            width: Dimensions.sizeLargest,
+          ),
+        ],
+      ),
+    );
+  }
+}

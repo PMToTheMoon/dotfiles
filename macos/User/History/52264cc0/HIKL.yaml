@@ -1,0 +1,16 @@
+name: api
+description: API client generator
+
+version: 0.1.0+1
+
+environment:
+  mason: ">=0.1.0-dev <0.1.0"
+  ftool:
+    path: "../../../packages/ftool"
+
+vars:
+  input:
+    type: string
+    description: api model file path
+    default: api.yaml
+    prompt: "API model file path"

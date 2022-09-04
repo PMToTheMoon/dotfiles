@@ -1,0 +1,28 @@
+part of 'stream_view_bloc.dart';
+
+const blocTemplate = """
+import 'dart:async';
+
+import 'package:bloc/bloc.dart';
+import '{{ bloc.state.import }}';
+import '{{ source.import }}';
+
+class {{ bloc.class }} extends Cubit<{{ bloc.state.type }}> {
+  {{ bloc.class }}({
+    required {{ bloc.state.type }} initial,
+    required Stream<{{ source.type }}> stream,
+  }) : super(initial) {
+    {{ bloc.subscription }} = stream.listen({{ source.listener }});
+  }
+
+  late final StreamSubscription<{{ source.type }}> {{ bloc.subscription }};
+
+  {{ hook }}
+
+  @override
+  Future<void> close() async {
+    await {{ bloc.subscription }}.cancel();
+    return super.close();
+  }
+}
+""";

@@ -1,0 +1,12 @@
+meta_objects:
+  fetch_bloc:
+    import: package:fetch_generators/bloc.dart
+    meta_object_factories:
+      - metaFetchBlocFactory
+
+generators:
+  fetch_bloc:
+    import: package:fetch_generators/bloc.dart
+    generator_extensions: {".yaml": [".dart"]}
+    generator_factories:
+      - metaFetchBlocGeneratorFactory

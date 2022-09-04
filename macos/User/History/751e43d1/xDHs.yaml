@@ -1,0 +1,11 @@
+stream_view_bloc:
+---
+subject: Hello
+state:
+  type: User?
+source:
+  type: NotUser
+  import: 'package:zanalys/user/user_service.dart'
+  transformer:
+    path: hooks.dart
+    name: helloHooks

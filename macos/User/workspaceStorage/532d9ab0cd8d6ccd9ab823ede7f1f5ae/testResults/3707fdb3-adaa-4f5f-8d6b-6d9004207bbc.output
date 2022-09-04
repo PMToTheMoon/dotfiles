@@ -1,0 +1,5 @@
+type 'Null' is not a subtype of type 'String' in type cast
+package:models/src/records/record/record.g.dart 10:29  _$RecordFromJson
+package:models/src/records/record/record.dart 57:57    new Record.fromJson
+test/some_test.dart 218:21                             main.<fn>
+

@@ -1,0 +1,10 @@
+page:
+  route: "/home"
+  appBar:
+  navigationMenu:
+  layout:
+    name: HomeLayout
+    type: Custom
+    children:
+      - map
+      - reservation_form

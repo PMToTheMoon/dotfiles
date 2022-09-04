@@ -1,0 +1,4 @@
+enum ComplementType {
+  crConsultation,
+  recordFollowup,
+}

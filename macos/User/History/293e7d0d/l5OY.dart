@@ -1,0 +1,33 @@
+import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:models/models.dart';
+import 'general_record_update.dart';
+
+part 'edit_record_request.g.dart';
+
+@JsonSerializable()
+class EditRecordRequest {
+  const EditRecordRequest(
+    this.record,
+  );
+
+  @JsonKey(name: 'jsonData', toJson: anyToJson)
+  final GeneralRecordUpdate record;
+
+  factory EditRecordRequest.fromJson(Map<String, dynamic> json) =>
+      _$EditRecordRequestFromJson(json);
+  Map<String, dynamic> toJson() => _$EditRecordRequestToJson(this);
+}
+
+@freezed
+class UpdateRecordRequest with _$UpdateRecordRequest {
+  const UpdateRecordRequest._();
+
+  const factory UpdateRecordRequest.general({
+    @JsonKey(name: 'jsonData', toJson: anyToJson)
+        required GeneralRecordUpdate record,
+  }) = _UpdateRecordRequest;
+
+  factory EditRecordRequest.fromJson(Map<String, dynamic> json) =>
+      _$EditRecordRequestFromJson(json);
+  Map<String, dynamic> toJson() => _$EditRecordRequestToJson(this);
+}

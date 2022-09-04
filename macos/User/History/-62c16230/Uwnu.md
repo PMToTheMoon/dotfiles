@@ -1,0 +1,1 @@
+The generator is composable. It's composed of many modules using others.

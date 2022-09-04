@@ -1,0 +1,43 @@
+{
+  "appName": "Zanalys",
+
+  "@_ERROR": {
+  },
+  "sessionExpired": "Votre session a expiré, veuillez vous reconnecter",
+  "undefined": "Une erreur est survenue. Merci de vérifier votre connexion et de réessayer"
+
+  "sign_in": {
+    "title": "Connexion",
+    "description": "Bienvenue sur zanalys pour vous connecter veuillez\nrécupérer l’identifiant qui vous a été transmis par mail  ",
+    "hintId": "Identifiant zanalys",
+    "HintPassword": "Mot de passe",
+    "button": "Se connecter",
+    "errors": {
+      "emailInvalid": "L'identifié renseigné est invalide",
+      "passwordInvalid": "Le mot de passe renseigné est invalide"
+    }
+  },
+  "home": {
+    "title": "Bonjour Docteur",
+    "buttonTakePhoto": "Prendre une\nPhoto",
+    "imagePicker": {
+      "gallery": "Galerie",
+      "camera": "Appareil photo"
+    }
+  },
+  "otp": {
+    "title": "Double authentification",
+    "description": "Un code vous a été envoyé par mail. Veuillez entrer \nce dernier pour vous connecter",
+    "button": "Valider"
+  },
+  "uploadDocument": {
+    "title": "Ajout de photo au dossier",
+    "hintAccessCode": "Code d'accès",
+    "button": "Envoyer photo",
+    "success": "Votre fichier a été ajouté"
+  },
+  "uploadConfirmation": {
+    "title": "Ajouter photo au dossier",
+    "label": "Votre fichier a été ajouté"
+  }
+}

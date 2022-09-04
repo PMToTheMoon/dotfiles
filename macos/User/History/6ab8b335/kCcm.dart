@@ -1,0 +1,26 @@
+import 'package:flutter/material.dart';
+
+class HUbPage extends StatefulWidget {
+  const HUbPage({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  _HUbPageState createState() => _HUbPageState();
+}
+
+class _HUbPageState extends State<HUbPage> {
+  _HUbPageState();
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Expanded(
+          child: PageView(),
+        )
+      ],
+    );
+  }
+}

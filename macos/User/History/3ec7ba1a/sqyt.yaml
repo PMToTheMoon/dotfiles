@@ -1,0 +1,19 @@
+targets:
+  $default:
+    builders:
+      my_builder:
+        enabled: true
+
+generators:
+  my_builder:
+    import: "package:my_package/builders.dart"
+    builder_factories:
+       - writesTemporary
+       - readsTemporaryWritesPermanent
+    build_extensions:
+      .dart:
+        - .used_during_build
+        - .output_for_real
+    auto_apply: dependents
+    applies_builders:
+      - my_package|temporary_file_cleanup

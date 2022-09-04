@@ -1,0 +1,33 @@
+import 'package:bonemeal/bonemeal.dart';
+import 'package:model_generators/model_generators.dart';
+
+extension TranslationExtension on String {
+  Expression get tr =>
+      refer('context.l10n.$this', 'package:translations/translations.dart');
+}
+
+jsonDateField(String fieldName, {String? name}) => jsonField(
+      fieldName,
+      refer('DateTime'),
+      fromJson: refer(
+        'dateFromJson',
+        'package:models/models.dart',
+      ),
+      toJson: refer(
+        'dateToJson',
+        'package:models/models.dart',
+      ),
+    );
+
+jsonDateField(String fieldName, {String? name}) => jsonField(
+      fieldName,
+      refer('DateTime'),
+      fromJson: refer(
+        'dateFromJson',
+        'package:models/models.dart',
+      ),
+      toJson: refer(
+        'dateToJson',
+        'package:models/models.dart',
+      ),
+    );

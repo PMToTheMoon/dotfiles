@@ -1,0 +1,40 @@
+Bonjour Pierre,
+
+Après avoir étudié votre cahier des charges, voici ma proposition.
+
+Je vous propose de développer la web-app Marche Sonore en flutter. Ce choix technique garantira de bonnes performances sur web et mobile avec une seule code base. Afin d'optimiser le SEO du site, il faudra prévoir une landing page en HTML/CSS qui redirigera vers la web-app Marche Sonore.
+
+Concernant les cartes dynamiques je recommande google map qui dispose d'une bonne intégration avec flutter.
+
+Pour le back office, un CMS comme vous l'avez proposé semble être une bonne idée. Je n'ai pas de proposition à l'heure actuelle, le principal critère de séléction sera le support d'édition de marqueurs sur une carte pour créer les marches sonores.
+
+Je ne peux pas vous proposer de définitif à l'heure actuelle, le cahier des charges n'étant pas assez précis pour cela. Je vous propose donc de travailler de la façon suivante:
+
+
+Dans un premier temps, effectuer le travail de design d'UI/UX avec votre graphiste pour réaliser les maquettes du projet sous toutes ces formes (Desktop, Mobile et tablette si besoin). Je pourrais vous accompagner dans ce travail si nécessaire.
+
+
+Une fois les maquettes établies je pourrais vous proposer un cahier des charges définitif ainsi qu'une estimation du temps nécessaire au développement.
+
+En phase de développement, je vous donne accès à une version "dev" de l'application. Je produis un nouveau build toutes les 1 à 2 semaines que je vous envoie accompagné de la liste des changements. De cette façon, vous pouvez suivre l'avancement du projet et me faire vos retours si quelque chose ne vous convient pas.
+
+
+Je fais les modifications mineures gratuitement, toutefois si une modification sors du cahier des charges et est trop couteuse en temps de développement, je la compte en supplément.
+
+
+Je vous donne accès au code source du projet une fois le développement terminé.
+
+
+Voici ma première estimation du temps de développement et du coup du projet à titre indicatif:
+
+architecture et travail préliminaire: 5 jours
+
+web-app Marche Sonore: 31 jours
+
+back-office: 10 jours
+
+devops et infrastructure: 5 jours
+
+Pour un total de 51 jours ouvrés, soit environ 2 mois et demi de travail pour une personne.
+
+Etant donnée la durée du projet, je réduis mon TJM à 300€. Le projet Marche Sonore aura donc un cout d'environ 15.000€, incluant la progressive web app marche sonore, son CMS et la mise en production sur vos serveurs.

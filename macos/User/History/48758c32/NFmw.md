@@ -1,0 +1,65 @@
+# json serializable
+
+It might be cool to access other generated field and use them as reference.
+
+consider the code bellow:
+```dart
+final child = JsonSerializable(
+  'Child',
+  {
+    /* ... */,
+  }
+);
+
+final parent = JsonSerializable(
+  'Parent',
+  {
+    jsonField(
+      'child',
+      refer('Child', 'package:models/models.dart'),
+    ),
+  }
+);
+```
+It would be better if it could be witted as 
+```dart
+final child = JsonSerializable(
+  'Child',
+  {
+    /* ... */,
+  }
+);
+
+final parent = JsonSerializable(
+  'Parent',
+  {
+    nestedJsonField(child),
+  }
+);
+```
+or prehaps:
+It would be better if it could be witted as 
+```dart
+
+Builder((BuildStep step) {
+  final child = JsonSerializable(
+    'Child',
+    {
+      /* ... */,
+    }
+  );
+
+  final childMetaData = await step.build(child);
+
+  final parent = JsonSerializable(
+    'Parent',
+    {
+      jsonField(
+        'child',
+        childMetaData.ref,
+      ),
+    }
+  );
+})
+
+```

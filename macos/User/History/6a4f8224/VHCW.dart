@@ -1,0 +1,39 @@
+import 'dart:async';
+
+import 'package:bonemeal/bonemeal.dart';
+
+import 'package:bloc_generators/src/utils/bloc.dart';
+import 'package:model_generators/model_generators.dart';
+
+part 'stream_view_bloc_data.dart';
+part 'stream_view_bloc_template.dart';
+
+class StreamViewBloc extends MetaObject<StreamViewBlocData, void> {
+  const StreamViewBloc({
+    this.model = const Model(),
+    super.root,
+  });
+
+  final Model model;
+
+  @override
+  FutureOr<void> build(BuildStep<StreamViewBlocData> context) async {
+    final stateBuildData = await context.build(model, context.input.state);
+    final data = context.input;
+
+    final outputBlocFileContent = renderDartTemplate(
+      blocTemplate,
+      context.uri,
+      await context.input.toParams(context),
+    );
+
+    await context.writeOutput(
+      data.fileName,
+      outputBlocFileContent,
+      [
+        if (stateBuildData.generated != null)
+          PartDependency.fromShared(stateBuildData.generated!),
+      ],
+    );
+  }
+}

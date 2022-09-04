@@ -1,0 +1,9 @@
+stream_view_bloc:
+---
+subject: Hello
+hooks: hooks.dart
+state: super_user.yaml
+source:
+  type: NotUser
+  import: 'not_user.dart'
+  transformer: _transformNotUser

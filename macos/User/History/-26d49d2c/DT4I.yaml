@@ -1,0 +1,17 @@
+M1:
+  f1: int
+  f2: String
+
+M2:
+  nested1:
+    nested1: int
+    nested2: String
+  normal: float
+
+M3:
+  nested1:
+    nested1: int
+    deep:
+      deepF1: int
+      deepF2: String
+  normal: float

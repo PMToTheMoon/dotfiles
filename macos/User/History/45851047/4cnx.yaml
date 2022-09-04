@@ -1,0 +1,13 @@
+generators:
+  test_generator:
+    import: "package:fetch_generators/fetch_generators.dart"
+    generator_factories:
+      - testGenerator
+    generator_extensions: {".dart": [".dart"]}
+    auto_apply: dependents
+    defaults:
+      hide_outputs: true
+      consume_inputs: true
+      generate_for: ["**.dart"]
+      options:
+        test: true

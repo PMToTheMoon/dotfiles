@@ -1,0 +1,14 @@
+import 'package:bonemeal/bonemeal.dart';
+
+abstract class Seed<T> extends MetaObject<T> {
+  @override
+  String get path => grow().path;
+
+  @override
+  T build(BuildStep step) {
+    final object = grow();
+    return object.build(step);
+  }
+
+  MetaObject<T> grow();
+}

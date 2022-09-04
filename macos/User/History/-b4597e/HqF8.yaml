@@ -1,0 +1,12 @@
+flow: MyFlow
+views:
+  StepABC:
+    type: screen
+    steps:
+      StepA:
+      StepB: 
+  StepDE:
+    type: dialog
+    steps:
+      StepD:
+      StepE: 

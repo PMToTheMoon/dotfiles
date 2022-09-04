@@ -1,0 +1,8 @@
+# root bonemeal file is supposed to define targets and override
+# generator default options
+targets:
+  $default:
+    builders:
+      my_generator:
+        options: 
+          some_key: "Some value the users will want in release mode"

@@ -1,0 +1,16 @@
+api: MyApi
+authority: "myapi.com"
+http_client: http|dio
+models: vanilla|freezed
+default:
+  protocol: http|https
+
+endpoints:
+  login:
+    protocol: http
+    method: post
+    response:
+      success:
+        token: String
+      invalidCredentials:
+        message: String

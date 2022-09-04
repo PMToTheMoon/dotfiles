@@ -1,0 +1,18 @@
+targets:
+  $default:
+    builders:
+      json_serializable:
+        options:
+          # Checked yaml config
+          any_map: true
+          checked: true
+          disallow_unrecognized_keys: true
+builders:
+  my_builder:
+    import: "package:my_package/builder.dart"
+    builder_factories: ["myBuilder"]
+    build_extensions: {".dart": [".my_package.dart"]}
+    auto_apply: dependents
+    defaults:
+      release_options:
+        some_key: "Some value the users will want in release mode"

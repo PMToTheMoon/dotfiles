@@ -1,0 +1,7 @@
+fetch_bloc:
+---
+subject: PatientList
+source:
+  type: PatientRepository
+  fetch_function: list
+  received_object_type: Patient

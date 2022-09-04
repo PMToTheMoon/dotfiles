@@ -1,0 +1,27 @@
+flow: MyFlow
+
+input:
+  Model:
+    param1: String
+    param2: bool?
+
+output:
+  Model:
+    param1: String
+    param2: bool?
+
+
+views:
+  StepABC:
+    type: screen
+    steps:
+      StepA:
+        widget: true
+        view: Custom
+
+      StepB: 
+  StepDE:
+    type: dialog
+    steps:
+      StepD:
+      StepE: 

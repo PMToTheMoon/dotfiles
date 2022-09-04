@@ -1,0 +1,1 @@
+A widget that delegate it's build to another widget using a builder

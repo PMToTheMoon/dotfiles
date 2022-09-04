@@ -1,0 +1,13 @@
+{
+  "@_UI_KIT": {
+  },
+  "example": "example: {param}",
+  "@example": {
+    "placeholders": {
+        "example": {
+            "type": "String"
+        }
+    }
+  },
+  "serach_bar_hint": "Rechercher ici…",
+}

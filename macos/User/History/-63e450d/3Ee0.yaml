@@ -1,0 +1,21 @@
+api: MyApi
+authority: myapi.com
+http_client: http|dio
+models: vanilla|freezed
+default:
+  protocol: http|https
+  headers: ...
+  content-type: application/json
+
+endpoints:
+  login:
+    header:
+    parameters:
+    body:
+    protocol: http
+    method: post
+    response:
+      success:
+        token: String
+      invalidCredentials:
+        message: String

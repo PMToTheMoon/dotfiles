@@ -1,0 +1,8 @@
+page: MyPage
+
+route: "/route"
+
+layout: MyPageLayout
+
+appBar: 
+navigationMenu: 

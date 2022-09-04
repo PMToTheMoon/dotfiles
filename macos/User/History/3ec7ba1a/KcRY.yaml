@@ -1,0 +1,16 @@
+generators:
+  test_generator:
+    import: "package:test_generator/test_generator.dart"
+    generator_factories:
+      - testGenerator
+    generator_extensions: {".dart": [".dart"]}
+    auto_apply: dependents
+    defaults:
+      options:
+        test: true
+
+# options:
+#   generators:
+#     $test_generator:$test_generator:
+#       options:
+#         test: false

@@ -1,0 +1,14 @@
+import 'package:bonemeal/bonemeal.dart';
+import 'package:model_generators/model_generators.dart';
+
+class AtomicModel extends Seed {
+  @override
+  MetaObject grow(BuildContext context) {
+    return Model(className: 'AtomicModel', fields: {});
+  }
+}
+
+class ParentModel extends Seed {
+  @override
+  MetaObject grow(BuildContext context) {}
+}

@@ -1,0 +1,76 @@
+import 'package:common/common.dart';
+import 'package:flutter/material.dart';
+import 'package:neat/neat.dart';
+
+import 'package:common/src/theme/theme_data/tab_bar_theme.dart';
+
+class UnderlineTabBar extends StatelessWidget {
+  const UnderlineTabBar({
+    super.key,
+    required this.tabs,
+  });
+
+  final List<String> tabs;
+
+  @override
+  Widget build(BuildContext context) {
+    return _TabBarContainer(
+      child: TabBar(
+        tabs: tabs
+            .map((t) => Tab(text: t, height: Dimensions.sizeSmaller))
+            .toList(),
+      ),
+    );
+  }
+}
+
+class HighlightTabBar extends StatelessWidget {
+  const HighlightTabBar({
+    super.key,
+    required this.tabs,
+  });
+
+  final List<String> tabs;
+
+  @override
+  Widget build(BuildContext context) {
+    return _TabBarContainer(
+      child: Theme(
+        data: context.theme.copyWith(
+          tabBarTheme: highlightTabBarTheme,
+        ),
+        child: TabBar(
+          tabs: tabs
+              .map((t) => Tab(text: t, height: Dimensions.sizeSmaller))
+              .toList(),
+        ),
+      ),
+    );
+  }
+}
+
+class _TabBarContainer extends StatelessWidget {
+  const _TabBarContainer({
+    Key? key,
+    required this.child,
+  }) : super(key: key);
+
+  final Widget child;
+
+  @override
+  Widget build(BuildContext context) {
+    final border = BorderSide(
+      color: context.colorScheme.outline,
+    );
+    return Container(
+      padding: const PaddingSmaller(),
+      decoration: BoxDecoration(
+        border: Border(
+          top: border,
+          bottom: border,
+        ),
+      ),
+      child: child,
+    );
+  }
+}
